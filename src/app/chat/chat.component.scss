@@ -1,0 +1,39 @@
+:host {
+
+    width: 400px;
+    min-height: 400px;
+    max-height: 90vh;
+
+    @media screen and (max-width: 768px) {
+        width: 95vw;
+        max-height: 95vh;
+        min-height: 0;
+
+        position: fixed;
+        bottom: 2.5vh;
+        left: 2.5vw;
+    }
+
+    transition: height 0.3s;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+}
+
+#header {
+    background-color: #6fa8dc;
+}
+
+#close-button {
+    fill: white; 
+
+    cursor: pointer;
+}
+
+#messages-container {
+    flex: 1;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}

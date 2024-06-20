@@ -1,0 +1,49 @@
+[
+    {
+        "id": 0,
+        "content": [
+            {
+                "isLink": false,
+                "content": "This is a test"
+            },
+            {
+                "isLink": true,
+                "content": "Le lien de test",
+                "link": "https://www.google.com"
+            }
+        ],
+        "answers": [
+            {
+                "content": "Answer of the test",
+                "nextMessageId": 0
+            },
+            {
+                "content": "answer 2",
+                "nextMessageId": 1
+            },
+            {
+                "content": "answer 3",
+                "nextMessageId": 0
+            },
+            {
+                "content": "answer 4",
+                "nextMessageId": 0
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "content": [
+            {
+                "isLink": false,
+                "content": "This is the second message"
+            }
+        ],
+        "answers": [
+            {
+                "content": "Answer of the second message",
+                "nextMessageId": 0
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+<div id="content" class="d-flex flex-column align-items-center justify-content-center"  >
+    <div *ngFor="let content of historyMessage.content">
+        <p class="text-center" *ngIf="!content.isLink">{{content.content}}</p>
+        <a class="text-center" *ngIf="content.isLink" href="{{content.link}}" >{{content.content}}</a>
+    </div>
+</div>
+<div id="answers" class="d-flex flex-row justify-content-center" >
+    <button [disabled]="true" class="btn btn-primary m-2">{{historyMessage.chosenAnswerContent}}</button>
+</div>
