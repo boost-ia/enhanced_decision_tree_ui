@@ -16,7 +16,13 @@ export type message = {
 }
 
 export type historyMessage = {
-    id: number;
-    content: messageContentElement[];
+    message: message;
     chosenAnswerContent: string;
+}
+
+export type city = {
+    name: string;
+    isInEn: boolean;
+    OIReferent?: string;
+    OILink?: string;
 }

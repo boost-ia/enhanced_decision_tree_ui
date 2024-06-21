@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Evry",
+        "isInEn": true
+    },
+    {
+        "name": "Rungis",
+        "isInEn": true
+    },
+    {
+        "name": "Paris",
+        "isInEn": false,
+        "OIReferent": "OI de Paris",
+        "OILink": "https://paris.fr"
+    }
+]

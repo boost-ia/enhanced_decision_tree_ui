@@ -1,0 +1,8 @@
+<ng-select 
+    [items]="city" 
+    [multiple]="false" 
+    [searchable]="true"
+    bindLabel="name" 
+    [(ngModel)]="selectedCity" 
+    (change)="updateChoosenCity()" >
+</ng-select>

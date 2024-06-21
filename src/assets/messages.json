@@ -4,31 +4,19 @@
         "content": [
             {
                 "isLink": false,
-                "content": "This is a test"
-            },
-            {
-                "isLink": true,
-                "content": "Le lien de test",
-                "link": "https://www.google.com"
+                "content": "Bonjour, puis-je vous aider ?"
             }
         ],
         "answers": [
             {
-                "content": "Answer of the test",
-                "nextMessageId": 0
-            },
-            {
-                "content": "answer 2",
+                "content": "Oui",
                 "nextMessageId": 1
             },
             {
-                "content": "answer 3",
-                "nextMessageId": 0
-            },
-            {
-                "content": "answer 4",
-                "nextMessageId": 0
+                "content": "Non",
+                "nextMessageId": null
             }
+            
         ]
     },
     {
@@ -36,14 +24,43 @@
         "content": [
             {
                 "isLink": false,
-                "content": "This is the second message"
+                "content": "Quelle est votre commune ?"
+            }
+        ],
+        "answers": []
+    },
+    {
+        "id": 2,
+        "content": [
+            {
+                "isLink": false,
+                "content": "Quel est votre besoin ?"
             }
         ],
         "answers": [
             {
-                "content": "Answer of the second message",
-                "nextMessageId": 0
+                "content": "Je suis un particulier",
+                "nextMessageId": 4
+            },
+            {
+                "content": "Je suis un promoteur/bailleur/syndic",
+                "nextMessageId": 5
             }
         ]
+    },
+    {
+        "id": 3,
+        "content": [
+            {
+                "isLink": false,
+                "content": "Sur votre commune, l'OI ou les OI référents sont :"
+            },
+            {
+                "isLink": true,
+                "content": "Lien de votre OI",
+                "link": "https://www.google.com"
+            }
+        ],
+        "answers": []
     }
 ]
