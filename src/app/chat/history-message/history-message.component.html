@@ -1,12 +1,19 @@
-<div id="content" class="d-flex flex-column align-items-center justify-content-center"  >
+<div *ngIf="historyMessage.message.content.length > 0" id="content" class="d-flex flex-column align-items-center justify-content-center"  >
     <div *ngFor="let content of historyMessage.message.content">
         <p class="text-center" *ngIf="!content.isLink">{{content.content}}</p>
         <a class="text-center" *ngIf="content.isLink" href="{{content.link}}" >{{content.content}}</a>
     </div>
 </div>
 <div id="answers" class="d-flex flex-wrap flex-row justify-content-center" >
-    <button *ngFor="let answer of historyMessage.message.answers" [disabled]="isDisabled(answer.content)" (click)="correctDecision(answer.nextMessageId)" class="btn btn-primary m-2">{{answer.content}}</button>
+    <button 
+        *ngFor="let answer of historyMessage.message.answers" 
+        [disabled]="isDisabled(answer.content)" 
+        (click)="correctDecision(answer.nextMessageId)" 
+        class="btn btn-primary m-2"
+        aria-live="assertive"
+        [attr.aria-label]="answer.content">{{answer.content}}</button>
 </div>
 <div *ngIf="historyMessage.message.id === 1">
     <app-city-selector [citySubject$]="citySubject$" [selectedCity]="currentCity"></app-city-selector>
 </div>
+<div class="line"></div>

@@ -29,7 +29,6 @@ export class CitySelectorComponent {
   }
 
   updateChoosenCity() {
-    console.log('updateChoosenCityWith', this.selectedCity)
     this.citySubject$.next(this.selectedCity)
   }
 

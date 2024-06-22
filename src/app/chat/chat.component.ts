@@ -70,6 +70,11 @@ export class ChatComponent {
     this.isChatShownService.setIsChatShown(false);
   }
 
+  resetChat() {
+    this.chatHistory = [];
+    this.currentMessage = this.chatMessages[0];
+  }
+
   scrollToBottom() {
     this.messagesContainer.nativeElement.scrollTop = this.messagesContainer.nativeElement.scrollHeight;
   }
