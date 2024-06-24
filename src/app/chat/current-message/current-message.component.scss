@@ -1,7 +1,22 @@
-#content {
+@import '../../../styles.scss';
 
+#content {
     padding: 10px;
     margin: 10px;
 
-    background-color: darken(whitesmoke, 10%);
+    border-radius: 10px;
+    border: 1px solid $main-blue;
+
+    background-color: white;
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: $main-blue;
+    border: none;
 }
