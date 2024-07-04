@@ -26,7 +26,7 @@
     <input type="number" formControlName="totalOutletNumber" id="totalOutletNumber" name="totalOutletNumber">
     <p>Attention, si le nombre de prise total est supérieur ou égale à 4, ceci devient une copropriété. Vous devez donc signer une convention en passant par «je suis un bailleur» dans notre chatbot.</p>
     <button 
-        [disabled]="fnpForm.invalid" 
+        [disabled]="fnpForm.invalid || isSuccessful" 
         class="btn btn-primary" 
         style="margin-top: 20px"
         (click)="submitForm()">Envoyer</button>

@@ -34,8 +34,9 @@
     <app-image-input #picture *ngIf="fmaForm.value.imageOverLink" [text]="'Image de la carte'"></app-image-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
+    <app-successful-request-display></app-successful-request-display>
     <button 
-        [disabled]="fmaForm.invalid || !cartographyValid" 
+        [disabled]="fmaForm.invalid || !cartographyValid || isSuccessful" 
         class="btn btn-primary" 
         style="margin-top: 20px"
         (click)="submitForm()">Envoyer</button>

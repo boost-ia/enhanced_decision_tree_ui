@@ -16,7 +16,7 @@ export class HistoryMessageComponent {
 
   @Input() historyMessage!: historyMessage;
 
-  @Input() citySubject$!: Subject<city>;
+  @Input() citySubject$!: Subject<city | undefined>;
   @Input() updateMessageSubject!: Subject<message>;
 
   @Input() correctDecisionSubject$!: Subject<{ messageIdToCorrect: number, messageChoosenId: number }>;

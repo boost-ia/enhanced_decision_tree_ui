@@ -32,8 +32,9 @@
     <app-image-input #certificate [text]="'Certificat d\'adressage délivré par la mairie'" ></app-image-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
+    <app-successful-request-display></app-successful-request-display>
     <button 
-        [disabled]="!imageValid || fmnForm.invalid" 
+        [disabled]="!imageValid || fmnForm.invalid || isSuccessful" 
         class="btn btn-primary" 
         style="margin-top: 20px"
         (click)="submitForm()">Envoyer</button>

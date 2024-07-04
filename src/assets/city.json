@@ -1,16 +1,920 @@
 [
     {
-        "name": "Evry",
+        "name": "Abbéville-la-Rivière",
         "isInEn": true
     },
     {
-        "name": "Rungis",
+        "name": "Angerville",
         "isInEn": true
     },
     {
-        "name": "Paris",
+        "name": "Angervilliers",
+        "isInEn": true
+    },
+    {
+        "name": "Arpajon",
         "isInEn": false,
-        "OIReferent": "OI de Paris",
-        "OILink": "https://paris.fr"
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Arrancourt",
+        "isInEn": true
+    },
+    {
+        "name": "Athis-Mons",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Authon-la-Plaine",
+        "isInEn": true
+    },
+    {
+        "name": "Auvernaux",
+        "isInEn": true
+    },
+    {
+        "name": "Auvers-Saint-Georges",
+        "isInEn": true
+    },
+    {
+        "name": "Avrainville",
+        "isInEn": true
+    },
+    {
+        "name": "Ballainvilliers",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Ballancourt-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Baulne",
+        "isInEn": true
+    },
+    {
+        "name": "Bièvres",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Blandy",
+        "isInEn": true
+    },
+    {
+        "name": "Boigneville",
+        "isInEn": true
+    },
+    {
+        "name": "Bois-Herpin",
+        "isInEn": true
+    },
+    {
+        "name": "Boissy-la-Rivière",
+        "isInEn": true
+    },
+    {
+        "name": "Boissy-le-Cutté",
+        "isInEn": true
+    },
+    {
+        "name": "Boissy-le-Sec",
+        "isInEn": true
+    },
+    {
+        "name": "Boissy-sous-Saint-Yon",
+        "isInEn": true
+    },
+    {
+        "name": "Bondoufle",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Boullay-les-Troux",
+        "isInEn": true
+    },
+    {
+        "name": "Bouray-sur-Juine",
+        "isInEn": true
+    },
+    {
+        "name": "Boussy-Saint-Antoine",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Boutervilliers",
+        "isInEn": true
+    },
+    {
+        "name": "Boutigny-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Bouville",
+        "isInEn": true
+    },
+    {
+        "name": "Brétigny-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "SFR / SEQUANTIC TELECOM",
+        "OILink": ""
+    },
+    {
+        "name": "Breuillet",
+        "isInEn": true
+    },
+    {
+        "name": "Breux-Jouy",
+        "isInEn": true
+    },
+    {
+        "name": "Brières-les-Scellés",
+        "isInEn": true
+    },
+    {
+        "name": "Briis-sous-Forges",
+        "isInEn": true
+    },
+    {
+        "name": "Brouy",
+        "isInEn": true
+    },
+    {
+        "name": "Brunoy",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Bruyères-le-Châtel",
+        "isInEn": true
+    },
+    {
+        "name": "Buno-Bonnevaux",
+        "isInEn": true
+    },
+    {
+        "name": "Bures-sur-Yvette",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Cerny",
+        "isInEn": true
+    },
+    {
+        "name": "Chalo-Saint-Mars",
+        "isInEn": true
+    },
+    {
+        "name": "Chalou-Moulineux",
+        "isInEn": true
+    },
+    {
+        "name": "Chamarande",
+        "isInEn": true
+    },
+    {
+        "name": "Champcueil",
+        "isInEn": true
+    },
+    {
+        "name": "Champlan",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Champmotteux",
+        "isInEn": true
+    },
+    {
+        "name": "Chatignonville",
+        "isInEn": true
+    },
+    {
+        "name": "Chauffour-lès-Étréchy",
+        "isInEn": true
+    },
+    {
+        "name": "Cheptainville",
+        "isInEn": true
+    },
+    {
+        "name": "Chevannes",
+        "isInEn": true
+    },
+    {
+        "name": "Chilly-Mazarin",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Congerville-Thionville",
+        "isInEn": true
+    },
+    {
+        "name": "Corbeil-Essonnes",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Corbreuse",
+        "isInEn": true
+    },
+    {
+        "name": "Courances",
+        "isInEn": true
+    },
+    {
+        "name": "Courdimanche-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Courson-Monteloup",
+        "isInEn": true
+    },
+    {
+        "name": "Crosne",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Dannemois",
+        "isInEn": true
+    },
+    {
+        "name": "D'Huison-Longueville",
+        "isInEn": true
+    },
+    {
+        "name": "Dourdan",
+        "isInEn": true
+    },
+    {
+        "name": "Draveil",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Écharcon",
+        "isInEn": true
+    },
+    {
+        "name": "Égly",
+        "isInEn": true
+    },
+    {
+        "name": "Épinay-sous-Sénart",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Épinay-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Étampes",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Étiolles",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Étréchy",
+        "isInEn": true
+    },
+    {
+        "name": "Evry-Courcouronnes",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Fleury-Mérogis",
+        "isInEn": false,
+        "OIReferent": "SFR / SEQUANTIC TELECOM",
+        "OILink": ""
+    },
+    {
+        "name": "Fontaine-la-Rivière",
+        "isInEn": true
+    },
+    {
+        "name": "Fontenay-lès-Briis",
+        "isInEn": true
+    },
+    {
+        "name": "Fontenay-le-Vicomte",
+        "isInEn": true
+    },
+    {
+        "name": "Forges-les-Bains",
+        "isInEn": true
+    },
+    {
+        "name": "Gif-sur-Yvette",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Gironville-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Gometz-la-Ville",
+        "isInEn": true
+    },
+    {
+        "name": "Gometz-le-Châtel",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Grigny",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Guibeville",
+        "isInEn": true
+    },
+    {
+        "name": "Guigneville-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Guillerval",
+        "isInEn": true
+    },
+    {
+        "name": "Igny",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Itteville",
+        "isInEn": true
+    },
+    {
+        "name": "Janville-sur-Juine",
+        "isInEn": true
+    },
+    {
+        "name": "Janvry",
+        "isInEn": true
+    },
+    {
+        "name": "Juvisy-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "La Ferté-Alais",
+        "isInEn": true
+    },
+    {
+        "name": "La Forêt-le-Roi",
+        "isInEn": true
+    },
+    {
+        "name": "La Forêt-Sainte-Croix",
+        "isInEn": true
+    },
+    {
+        "name": "La Norville",
+        "isInEn": true
+    },
+    {
+        "name": "La Ville-du-Bois",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Lardy",
+        "isInEn": true
+    },
+    {
+        "name": "Le Coudray-Montceaux",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Le Mérévillois",
+        "isInEn": true
+    },
+    {
+        "name": "Le Plessis-Pâté",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Le Val-Saint-Germain",
+        "isInEn": true
+    },
+    {
+        "name": "Les Granges-le-Roi",
+        "isInEn": true
+    },
+    {
+        "name": "Les Molières",
+        "isInEn": true
+    },
+    {
+        "name": "Les Ulis",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Leudeville",
+        "isInEn": true
+    },
+    {
+        "name": "Leuville-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Limours",
+        "isInEn": true
+    },
+    {
+        "name": "Linas",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Lisses",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Longjumeau",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Longpont-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Maisse",
+        "isInEn": true
+    },
+    {
+        "name": "Marcoussis",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Marolles-en-Beauce",
+        "isInEn": true
+    },
+    {
+        "name": "Marolles-en-Hurepoix",
+        "isInEn": true
+    },
+    {
+        "name": "Massy",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Mauchamps",
+        "isInEn": true
+    },
+    {
+        "name": "Mennecy",
+        "isInEn": true
+    },
+    {
+        "name": "Mérobert",
+        "isInEn": true
+    },
+    {
+        "name": "Mespuits",
+        "isInEn": true
+    },
+    {
+        "name": "Milly-la-Forêt",
+        "isInEn": true
+    },
+    {
+        "name": "Moigny-sur-École",
+        "isInEn": true
+    },
+    {
+        "name": "Mondeville",
+        "isInEn": true
+    },
+    {
+        "name": "Monnerville",
+        "isInEn": true
+    },
+    {
+        "name": "Montgeron",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Montlhéry",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Morangis",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Morigny-Champigny",
+        "isInEn": true
+    },
+    {
+        "name": "Morsang-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Morsang-sur-Seine",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Nainville-les-Roches",
+        "isInEn": true
+    },
+    {
+        "name": "Nozay",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Ollainville",
+        "isInEn": true
+    },
+    {
+        "name": "Oncy-sur-École",
+        "isInEn": true
+    },
+    {
+        "name": "Ormoy",
+        "isInEn": true
+    },
+    {
+        "name": "Ormoy-la-Rivière",
+        "isInEn": true
+    },
+    {
+        "name": "Orsay",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Orveau",
+        "isInEn": true
+    },
+    {
+        "name": "Palaiseau",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Paray-Vieille-Poste",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Pecqueuse",
+        "isInEn": true
+    },
+    {
+        "name": "Plessis-Saint-Benoist",
+        "isInEn": true
+    },
+    {
+        "name": "Prunay-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Puiselet-le-Marais",
+        "isInEn": true
+    },
+    {
+        "name": "Pussay",
+        "isInEn": true
+    },
+    {
+        "name": "Quincy-sous-Sénart",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Richarville",
+        "isInEn": true
+    },
+    {
+        "name": "Ris-Orangis",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Roinville",
+        "isInEn": true
+    },
+    {
+        "name": "Roinvilliers",
+        "isInEn": true
+    },
+    {
+        "name": "Saclas",
+        "isInEn": true
+    },
+    {
+        "name": "Saclay",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Saint-Aubin",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Saint-Chéron",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Cyr-la-Rivière",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Cyr-sous-Dourdan",
+        "isInEn": true
+    },
+    {
+        "name": "Sainte-Geneviève-des-Bois",
+        "isInEn": false,
+        "OIReferent": "SFR / SEQUANTIC TELECOM",
+        "OILink": ""
+    },
+    {
+        "name": "Saint-Escobille",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Germain-lès-Arpajon",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Germain-lès-Corbeil",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Saint-Hilaire",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Jean-de-Beauregard",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Maurice-Montcouronne",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Michel-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "SFR / SEQUANTIC TELECOM",
+        "OILink": ""
+    },
+    {
+        "name": "Saint-Pierre-du-Perray",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Saintry-sur-Seine",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Saint-Sulpice-de-Favières",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Vrain",
+        "isInEn": true
+    },
+    {
+        "name": "Saint-Yon",
+        "isInEn": true
+    },
+    {
+        "name": "Saulx-les-Chartreux",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Savigny-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Sermaise",
+        "isInEn": true
+    },
+    {
+        "name": "Soisy-sur-École",
+        "isInEn": true
+    },
+    {
+        "name": "Soisy-sur-Seine",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Souzy-la-Briche",
+        "isInEn": true
+    },
+    {
+        "name": "Tigery",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Torfou",
+        "isInEn": true
+    },
+    {
+        "name": "Valpuiseaux",
+        "isInEn": true
+    },
+    {
+        "name": "Varennes-Jarcy",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Vaugrigneuse",
+        "isInEn": true
+    },
+    {
+        "name": "Vauhallan",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Vayres-sur-Essonne",
+        "isInEn": true
+    },
+    {
+        "name": "Verrières-le-Buisson",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Vert-le-Grand",
+        "isInEn": true
+    },
+    {
+        "name": "Vert-le-Petit",
+        "isInEn": true
+    },
+    {
+        "name": "Videlles",
+        "isInEn": true
+    },
+    {
+        "name": "Vigneux-sur-Seine",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Villabé",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Villebon-sur-Yvette",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Villeconin",
+        "isInEn": true
+    },
+    {
+        "name": "Villejust",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Villemoisson-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "SFR / SEQUANTIC TELECOM",
+        "OILink": ""
+    },
+    {
+        "name": "Villeneuve-sur-Auvers",
+        "isInEn": true
+    },
+    {
+        "name": "Villiers-le-Bâcle",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Villiers-sur-Orge",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Viry-Châtillon",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Wissous",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
+    },
+    {
+        "name": "Yerres",
+        "isInEn": false,
+        "OIReferent": "Multiples",
+        "OILink": "https://cartefibre.arcep.fr/index.html?lng=2.3&lat=46&zoom=6.5&mode=normal&legende=true&filter=true&trimestre=2024T1"
     }
 ]

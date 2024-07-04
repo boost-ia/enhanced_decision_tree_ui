@@ -28,8 +28,9 @@
     <app-image-input #conventionInput [text]="'Image de la convention signée'"></app-image-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
+    <app-successful-request-display></app-successful-request-display>
     <button 
-        [disabled]="fcsForm.invalid || !imageValid" 
+        [disabled]="fcsForm.invalid || !imageValid || isSuccessful" 
         class="btn btn-primary" 
         style="margin-top: 20px"
         (click)="submitForm()">Envoyer</button>

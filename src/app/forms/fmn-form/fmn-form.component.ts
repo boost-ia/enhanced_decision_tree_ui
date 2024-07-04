@@ -5,11 +5,12 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
 import { form } from '../../models/models';
 import { ImageInputComponent } from '../image-input/image-input.component';
+import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
 
 @Component({
   selector: 'app-fmn-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, SuccessfulRequestDisplayComponent],
   templateUrl: './fmn-form.component.html',
   styleUrl: './fmn-form.component.scss'
 })
@@ -46,7 +47,7 @@ export class FmnFormComponent {
   }
 
   submitForm() {
-    this.formService.sendForm(this.fmnForm.value, form.FMNFORM)
+    this.formService.sendForm(this.fmnForm.value, form.FMNFORM, this.screenShotInput?.getImageFile()!, this.screenShotCertificateInput?.getImageFile()!)
   }
 
   get imageValid(): boolean {
@@ -54,6 +55,10 @@ export class FmnFormComponent {
     console.log(this.screenShotInput?.isImageValid);
     console.log(this.screenShotCertificateInput?.isImageValid);
     return this.screenShotInput?.isImageValid && this.screenShotCertificateInput?.isImageValid ? true : false
+  }
+
+  get isSuccessful() {
+    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
   }
 
 }

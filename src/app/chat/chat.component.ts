@@ -31,7 +31,7 @@ export class ChatComponent {
   correctDecisionSubject$ = new Subject<{ messageIdToCorrect: number, messageChoosenId: number }>();
   correctionDecisionSubscription: any;
 
-  citySubject$ = new Subject<city>();
+  citySubject$ = new Subject<city | undefined>();
   citySubjectSubscription: any;
   currentCity?: city;
 
@@ -73,6 +73,7 @@ export class ChatComponent {
   resetChat() {
     this.chatHistory = [];
     this.currentMessage = this.chatMessages[0];
+    this.currentCity = undefined;
   }
 
   scrollToBottom() {
@@ -120,6 +121,11 @@ export class ChatComponent {
 
     this.currentMessage = this.chatMessages[1] //Where we ask for the city
 
+    //unselect the city
+    if(!this.currentCity) {
+      return
+    }
+
     if(this.currentCity?.isInEn) {
       this.addMessageToHistory(this.currentMessage!, 2)
       this.currentMessage = this.chatMessages[2]
@@ -127,7 +133,7 @@ export class ChatComponent {
     if(!this.currentCity?.isInEn) {
       this.addMessageToHistory(this.currentMessage!, 3)
       let message = this.chatMessages[3]
-      message.content[0].content = message.content[0].content + this.currentCity?.OIReferent
+      message.content[0].content = "Sur votre commune, l'OI ou les OI référents sont : " + this.currentCity?.OIReferent
       message.content[1].link =  this.currentCity?.OILink
       this.currentMessage = message;
     }

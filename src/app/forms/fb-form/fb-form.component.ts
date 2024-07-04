@@ -4,11 +4,12 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
 import { form } from '../../models/models';
+import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
 
 @Component({
   selector: 'app-fb-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, SuccessfulRequestDisplayComponent],
   templateUrl: './fb-form.component.html',
   styleUrl: './fb-form.component.scss'
 })
@@ -44,6 +45,10 @@ export class FbFormComponent {
 
   submitForm() {
     this.formService.sendForm(this.fbForm.value, form.FBFORM)
+  }
+
+  get isSuccessful() {
+    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
   }
 
 }

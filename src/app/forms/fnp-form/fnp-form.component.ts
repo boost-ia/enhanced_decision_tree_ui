@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormDisplayService } from '../../services/form-display.service';
+import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
+import { form } from '../../models/models';
 
 @Component({
   selector: 'app-fnp-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule, SuccessfulRequestDisplayComponent],
   templateUrl: './fnp-form.component.html',
   styleUrl: './fnp-form.component.scss'
 })
@@ -30,7 +32,11 @@ export class FnpFormComponent {
   }
 
   submitForm() {
-    
+    this.formService.sendForm(this.fnpForm.value, form.FNPFORM)
+  }
+
+  get isSuccessful() {
+    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
   }
 
 }

@@ -4,11 +4,13 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { FormDisplayService } from '../../services/form-display.service';
+import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
+import { form } from '../../models/models';
 
 @Component({
   selector: 'app-fma-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, SuccessfulRequestDisplayComponent],
   templateUrl: './fma-form.component.html',
   styleUrl: './fma-form.component.scss'
 })
@@ -38,7 +40,7 @@ export class FmaFormComponent {
   }
 
   submitForm() {
-
+    this.formService.sendForm(this.fmaForm.value, form.FMAFORM, this.pictureInput?.getImageFile()!)
   }
 
   get cartographyValid(): boolean {
@@ -48,6 +50,10 @@ export class FmaFormComponent {
     } else {
       return (this.fmaForm.value.cartographyLink?.length ?? 0) > 0
     }
+  }
+
+  get isSuccessful() {
+    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
   }
 
 }

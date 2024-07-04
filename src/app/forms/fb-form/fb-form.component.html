@@ -30,8 +30,9 @@
     <input type="text" formControlName="incidentNumber" id="incidentNumber" name="incidentNumber">
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
+    <app-successful-request-display></app-successful-request-display>
     <button 
-        [disabled]="fbForm.invalid" 
+        [disabled]="fbForm.invalid || isSuccessful" 
         class="btn btn-primary" 
         style="margin-top: 20px"
         (click)="submitForm()">Envoyer</button>

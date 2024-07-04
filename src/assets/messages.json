@@ -53,12 +53,12 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Sur votre commune, l'OI ou les OI référents sont :"
+                "content": "Sur votre commune, l'OI ou les OI référents sont : "
             },
             {
                 "isLink": true,
-                "content": "Lien de votre OI",
-                "link": "https://www.google.com"
+                "content": "Consulter le site de votre OI.",
+                "link": "link"
             }
         ],
         "answers": []

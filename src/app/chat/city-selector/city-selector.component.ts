@@ -32,6 +32,10 @@ export class CitySelectorComponent {
     this.citySubject$.next(this.selectedCity)
   }
 
+  onClear() {
+    this.citySubject$.next(undefined)
+  }
+
   getCityList() {
     this.http.get<city[]>('/assets/city.json').subscribe((data: city[]) => {
       this.city = data;
