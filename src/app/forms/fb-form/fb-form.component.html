@@ -1,0 +1,38 @@
+<form [formGroup]="fbForm">
+    <button 
+        id="close-button" 
+        class="close-button"
+        aria-label="Fermer le formulaire"
+        (click)="closeChat()"
+        style="background: none; border: none; padding: 0; cursor: pointer; top: 5px; right: 5px">
+        <svg 
+            style="height: 30px; width: 30px" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 384 512">
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+        </svg>
+    </button>
+    <h2>Formulaire de contact :</h2>
+    <label for="name">Nom :</label>
+    <input type="text" formControlName="name" id="name" name="name">
+    <label for="firstname">Prénom :</label>
+    <input type="text" formControlName="firstname" id="firstname" name="firstname">
+    <label for="mail">Mail :</label>
+    <input type="text" formControlName="mail" id="mail" name="mail">
+    <label for="address">Adresse :</label>
+    <input type="text" formControlName="address" id="address" name="address">
+    <label for="operator">Opérateur :</label>
+    <ng-select [items]="operators" ></ng-select>
+    <label for="incidentDate">Date de l'incident :</label>
+    <input type="date" formControlName="incidentDate" id="incidentDate" name="incidentDate">
+    <label for="incidentNumber">Numéro de l'incident :</label>
+    <input type="text" formControlName="incidentNumber" id="incidentNumber" name="incidentNumber">
+    <label for="comment">Commentaire :</label>
+    <textarea formControlName="comment" id="comment" name="comment"></textarea>
+    <button 
+        [disabled]="fbForm.invalid" 
+        class="btn btn-primary" 
+        style="margin-top: 20px"
+        (click)="submitForm()">Envoyer</button>
+</form>

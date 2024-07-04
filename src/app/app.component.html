@@ -12,3 +12,11 @@
   </button>
   <app-chat id="main-chat" [ngStyle]="!isChatShown ? {'display': 'none'} : {}" ></app-chat>
 </div>
+<div id="form-container" *ngIf="formDisplayService.formDisplay !== undefined">
+  <app-fb-form class="form" *ngIf="formDisplayService.formDisplay === formNames.FBFORM"></app-fb-form>
+  <app-fmn-form class="form" *ngIf="formDisplayService.formDisplay === formNames.FMNFORM"></app-fmn-form>
+  <app-fd-form class="form" *ngIf="formDisplayService.formDisplay === formNames.FDFORM"></app-fd-form>
+  <app-fma-form class="form" *ngIf="formDisplayService.formDisplay === formNames.FMAFORM"></app-fma-form>
+  <app-fnp-form class="form" *ngIf="formDisplayService.formDisplay === formNames.FNPFORM"></app-fnp-form>
+  <app-fcs-form class="form" *ngIf="formDisplayService.formDisplay === formNames.FCSFORM"></app-fcs-form>
+</div>

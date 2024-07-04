@@ -169,9 +169,10 @@
                 "content": "Complétez ce formulaire: "
             },
             {
-                "isLink": true, 
+                "isLink": false, 
                 "content": "lien du formulaire",
-                "linl": "TODO"
+                "isForm": true,
+                "formName": "FMAFORM"
             }
         ],
         "answers": []
@@ -181,7 +182,11 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Essonne Numérique déploie un réseau fibre optique neutre, ouvert et libre d'accès à tous les opérateurs. Il n'y a aucune exclusivité d'opérateur. Chaque opérateur est libre de venir ou non sur notre réseau selon sa propre stratégie commerciale.\nSi votre opérateur ne répond pas à vos besoins vous êtes bien évidemment libre d'en choisir un autre."
+                "content": "Essonne Numérique déploie un réseau fibre optique neutre, ouvert et libre d'accès à tous les opérateurs. Il n'y a aucune exclusivité d'opérateur. Chaque opérateur est libre de venir ou non sur notre réseau selon sa propre stratégie commerciale."
+            },
+            {
+                "isLink": false,
+                "content": "Si votre opérateur ne répond pas à vos besoins vous êtes bien évidemment libre d'en choisir un autre."
             }
         ],
         "answers": []
@@ -191,12 +196,21 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Pour toute problématique de maintenance ou de coupure réseau fibre optique, votre opérateur commercial reste votre seul interlocuteur.\nNous vous invitons à contacter votre opérateur afin de lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (Xpfibre). Ce numéro nous permettre de suivre votre demande.\nUne fois ce numéro d'incident obtenu, vous pourrez nous contacteren cliquant sur le lien suivant:"
+                "content": "Pour toute problématique de maintenance ou de coupure réseau fibre optique, votre opérateur commercial reste votre seul interlocuteur."
             },
             {
-                "isLink": true,
+                "isLink": false,
+                "content": "Nous vous invitons à contacter votre opérateur afin de lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (Xpfibre). Ce numéro nous permettre de suivre votre demande."
+            },
+            {
+                "isLink": false,
+                "content": "Une fois ce numéro d'incident obtenu, vous pourrez nous contacteren cliquant sur le lien suivant:"
+            },
+            {
+                "isLink": false,
                 "content": "lien du formulaire", 
-                "link": "LIEN FB TODO"
+                "isForm": true,
+                "formName": "FBFORM"
             }
         ],
         "answers": []
@@ -209,9 +223,10 @@
                 "content": "Veuillez remplir ce formulaire:"
             },
             {
-                "isLink": true, 
+                "isLink": false, 
                 "content": "lien du formulaire",
-                "link": "FORM FNP"
+                "isForm": true,
+                "formName": "FNPFORM"
             }
         ],
         "answers": []
@@ -249,7 +264,25 @@
         "content": [
             {
                 "isLink": false,
-                "content": "I + I bis"
+                "content": "En zone publique (en dehors du droit du terrain ; roue et/ou trottoir qui n'est pas dans l'alignement du droit du terrain) c'est le responsable d'infrastructure qui est responsable des opérations."
+            },
+            {
+                "isLink": false,
+                "content": "Lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage en zone publique, il doit remonter la problématique à l'exploitant du réseau XpFibre pour dédencher une intervention."
+            },
+            {
+                "isLink": false,
+                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro est nous permettra de suvre votre. problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous conucter en clouant surle leni suivant:"
+            },
+            {
+                "isLink": false,
+                "isForm": true,
+                "content": "Lien du formulaire",
+                "formName":"FBFORM"
+            },
+            {
+                "isLink": false,
+                "content": "En zone publique, dans le droit du terrain (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient aux propriétaires d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les trave acer damenta a re otiquer la suite réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée Vous pouvez également demander un devis à l'exploitant du réseau XoFibre."
             }
         ],
         "answers": []
@@ -259,7 +292,11 @@
         "content": [
             {
                 "isLink": false,
-                "content": "II"
+                "content": "En zone privée, si le fourreau n'est pas utilisable, il appartient au propriétaire d'assurer les travaux car il s'agit de sa propriété, c'est donc sous sa responsabilité (tout comme la toiture ou les murs du logement par exemple). Ces réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée."
+            },
+            {
+                "isLink": false,
+                "content": "De fait, en cas de blocage en zone privée, nous vous invitons à entreprendre les travaux nécessaires qui permettront par la suite votre raccordement à la fibre optique."
             }
         ],
         "answers": []
@@ -283,7 +320,19 @@
         "content": [
             {
                 "isLink": false,
-                "content": "III"
+                "content": "Pour toute problématique de raccordement, votre opérateur commercial reste votre seul interlocuteur. Votre opérateur est responsable de votre raccordement."
+            },
+            {
+                "isLink": false,
+                "content": "Lors de son intervention à votre domicile et en cas de problématique, votre technicien doit contacter une hotline dédiée afin de réaliser un compte-rendu d'échec raccordement, permettant de dédencher les actions nécessaires pour débloquer votre situation."
+            },
+            {
+                "isLink": false,
+                "content": "Nous vous recommandons de demander à votre technicien ou à votre opérateur le numéro de ticket d'incident, vous pourrez revenir vers nous une fois ce numéro de ticket obtenu."
+            },
+            {
+                "isLink": false,
+                "content": "Sans numéro de ticket, nous ne serons malheureusement pas en mesure de suivre votre problématique auprès de l'exploitant XpFibre."
             }
         ],
         "answers": []
@@ -293,7 +342,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "V"
+                "content": "Afin que nous puissions suivre votre problématique auprès de l'exploitant du réseau XpFibre, nous vous invitons à contacter Essonne Numérique en cliquant sur le lien suivant: "
             }
         ],
         "answers": []
@@ -308,7 +357,7 @@
             },
             {
                 "content": "Lotissement ou immeuble neuf.",
-                "nextMessageId": null
+                "nextMessageId": 33
             }
         ]
     },
@@ -322,7 +371,7 @@
             },
             {
                 "content": "Je passe par un promoteur immobilier.",
-                "nextMessageId": null
+                "nextMessageId": 33
             }
         ]
     },
@@ -349,7 +398,58 @@
         "content": [
             {
                 "isLink": false,
-                "content": "VI"
+                "content": "Trois étapes à suivre: "
+            },
+            {
+                "isLink": false,
+                "content": "Étape 1:"
+            },
+            {
+                "isLink": false,
+                "content": "Vous devez impérativement saisir votre demande sur la plateforme dédiée d'XpFibre (exploitant du réseau) permettant le traitement des nouvelles constructions individuelles."
+            },
+            {
+                "isLink": true,
+                "content": "Lien XpFibre TODO"
+            },
+            {
+                "isLink": false,
+                "content": "Étape 2:"
+            },
+            {
+                "isLink": false,
+                "content": "En complément de votre demande auprès d'XpFibre, vous pouvez nous contacter en cliquant sur le lien suivant:"
+            },
+            {
+                "isLink": false,
+                "isForm": true,
+                "content": "Lien du formulaire",
+                "formName": "FMNFORM"
+            },
+            {
+                "isLink": false,
+                "content": "Étape 3:"
+            },
+            {
+                "isLink": false,
+                "content": "[en zone privé]"
+            },
+            {
+                "isLink": false,
+                "content": "Vous devez procéder à la pause d'un fourreau, allant du point d'arrivée de la fibre optique au sein de votre maison jusqu'au domaine public. La pose est sous votre responsabilité (comme dest déjà le cas pour l'électricité et l'eau."
+            },
+            {
+                "isLink": false,
+                "content": "[en zone publique]"
+            },
+            {
+                "isLink": false,
+                "content": "Vous avez la possibilité de solliciter directement XpFibre pour effectuer les travaux, et demander un devis en cliquant sur le lien suivant:"
+            }
+            ,
+            {
+                "isLink": true,
+                "content": "Lien XpFivre TODO"
             }
         ],
         "answers": []
@@ -359,7 +459,21 @@
         "content": [
             {
                 "isLink": false,
-                "content": "VII"
+                "content": "Nous vous invitons à contacter XpFibre à l'aide de votre numéro de dossier depuis votre espace client XpFibre, une réponse devrait vous être apportée dans un délai estimatif de 15 jours :"
+            },
+            {
+                "isLink": true,
+                "content": "TODO"
+            },
+            {
+                "isLink": false,
+                "content": "Afin que nous puissions demander directement à l'exploitant du réseau XpFibre, vous pouvez également contacter Essonne numérique en cliquant sur le lien suivant:"
+            },
+            {
+                "isLink": false,
+                "isForm": true,
+                "content": "Lien du formulaire",
+                "formName": "FMNFORM"
             }
         ],
         "answers": []
@@ -387,9 +501,10 @@
                 "content": "Nous vous invitons à nous contacter en cliquant sur le lien suivant:"
             },
             {
-                "isLink": true,
-                "content": "lien",
-                "link": "TODO"
+                "isLink": false,
+                "content": "lien du formulaire",
+                "isForm": true,
+                "formName": "FDFORM"
             }
         ],
         "answers": []
@@ -430,6 +545,10 @@
                 "isLink": true,
                 "content": "lien info",
                 "link": "TODO"
+            },
+            {
+                "isLink": false,
+                "content": "Face à cette problématique, seul le promoteur peut débloquer la situation."
             }
         ]
     },
@@ -464,9 +583,35 @@
                 "content": "Je télécharge la convention (lien), la complète et la renvoie via le lien ci-après. Essonne numérique traitera votre demande dans les meilleurs délais."
             },
             {
-                "isLink": true,
+                "isLink": false,
                 "content": "lien fcs",
-                "link": "TODO"
+                "isForm": true,
+                "formName": "FCSFORM"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "content": [
+            {
+                "isLink": false,
+                "content": "Il faut impérativement vous assurer auprès de votre promoteur immobilier qu'il a bien réalisé toutes les démarches sous sa responsabilité. Si votre adresse n'est pas dans la base nationale d'éligibilité à la fibre optique, cela signifie que la construction (lotissement ou immeuble neuf) n'a pas été déclarée."
+            },
+            {
+                "isLink": false,
+                "content": "En effet, pour les nouvelles constructions, le promoteur doit solliciter XpFibre ('exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique, le principe reste le même)."
+            },
+            {
+                "isLink": false,
+                "content": "Pour information, voici le processus détaillé que doit respecter votre promoteur lien info."
+            },
+            {
+                "isLink": true,
+                "content": "TODO"
+            },
+            {
+                "isLink": false,
+                "content": "Face à cette problématique, seul votre promoteur peut débloquer la situation."
             }
         ]
     }

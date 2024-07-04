@@ -7,6 +7,8 @@ export type messageContentElement = {
     isLink: boolean;
     content: string;
     link?: string;
+    isForm?: boolean;
+    formName?: form;
 }
 
 export type message = {
@@ -25,4 +27,13 @@ export type city = {
     isInEn: boolean;
     OIReferent?: string;
     OILink?: string;
+}
+
+export enum form {
+    FBFORM = 'FBFORM',
+    FMNFORM = 'FMNFORM',
+    FDFORM = 'FDFORM',
+    FMAFORM = 'FMAFORM',
+    FNPFORM = 'FNPFORM',
+    FCSFORM = 'FCSFORM'
 }

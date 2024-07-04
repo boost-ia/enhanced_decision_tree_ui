@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+
+form {
+
+    position: relative;
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 20px
+}
+
+.btn-primary {
+    background-color: $main-blue;
+    border: none;
+}
+
+.close-button {
+    position: absolute
+}
