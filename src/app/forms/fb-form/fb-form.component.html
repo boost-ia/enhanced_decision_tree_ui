@@ -23,7 +23,7 @@
     <label for="address">Adresse :</label>
     <input type="text" formControlName="address" id="address" name="address">
     <label for="operator">Opérateur :</label>
-    <ng-select [items]="operators" ></ng-select>
+    <ng-select formControlName="operator" [items]="operators" ></ng-select>
     <label for="incidentDate">Date de l'incident :</label>
     <input type="date" formControlName="incidentDate" id="incidentDate" name="incidentDate">
     <label for="incidentNumber">Numéro de l'incident :</label>

@@ -410,7 +410,8 @@
             },
             {
                 "isLink": true,
-                "content": "Lien XpFibre TODO"
+                "content": "Lien XpFibre",
+                "link": "https://xpfibre.com/"
             },
             {
                 "isLink": false,
@@ -449,7 +450,8 @@
             ,
             {
                 "isLink": true,
-                "content": "Lien XpFivre TODO"
+                "content": "Lien XpFibre",
+                "link": "https://xpfibre.com/"
             }
         ],
         "answers": []
@@ -463,7 +465,8 @@
             },
             {
                 "isLink": true,
-                "content": "TODO"
+                "content": "Lien XpFibre",
+                "link": "https://xpfibre.com/"
             },
             {
                 "isLink": false,
@@ -487,8 +490,8 @@
             },
             {
                 "isLink": true,
-                "content": "plateforme XpFibre",
-                "link": "TODO"
+                "content": "Lien XpFibre",
+                "link": "https://xpfibre.com/"
             }
         ],
         "answers": []
@@ -515,7 +518,7 @@
             {
                 "isLink": true,
                 "content": "Lien vers la FAQ",
-                "link": "TODO"
+                "link": "https://essonnenumerique.com/faq-2/"
             }
         ],
         "answers": []
@@ -539,12 +542,12 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Pour les nouvelles constructions, le promoteur doit solliciter XpFibre (l'exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique) Pour information, voici le processus détaillé que doit respecter le promoteur."
+                "content": "Pour les nouvelles constructions, le promoteur doit solliciter XpFibre (l'exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique). Pour information, voici le processus détaillé que doit respecter le promoteur."
             },
             {
                 "isLink": true,
                 "content": "lien info",
-                "link": "TODO"
+                "link": "https://xpfibre.com/"
             },
             {
                 "isLink": false,
@@ -584,7 +587,7 @@
             },
             {
                 "isLink": false,
-                "content": "lien fcs",
+                "content": "Formulaire",
                 "isForm": true,
                 "formName": "FCSFORM"
             }
@@ -607,7 +610,8 @@
             },
             {
                 "isLink": true,
-                "content": "TODO"
+                "content": "Lien XpFibre",
+                "link": "https://xpfibre.com/"
             },
             {
                 "isLink": false,

@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class FormDisplayService {
 
   formDisplay: form | undefined;
-  endpoint = 'https://truc.com';
+  endpoint = 'http://localhost:8080/form-endpoint';
 
   isLoading: boolean = false;
   isSentSuccessfull?: boolean;
@@ -27,22 +27,21 @@ export class FormDisplayService {
 
   sendForm(form: any, formName: form, screenShot?: File, certificateScreenShot?: File) {
     this.isLoading = false
-    let finalForm = {
-      ...form,
-      formName
+    let finalForm = new FormData();
+    finalForm.append('formName', formName as unknown as string);
+
+    for (let key in form) {
+      if (form.hasOwnProperty(key)) {
+        finalForm.append(key, form[key]);
+      }
     }
     if(screenShot) {
-      finalForm = {
-        ...finalForm,
-        screenShot
-      }
+      finalForm.append('screenShot', screenShot);
     }
     if(certificateScreenShot) {
-      finalForm = {
-        ...finalForm,
-        screenShot
-      }
+      finalForm.append('certificateScreenShot', certificateScreenShot);
     }
+
     this.http.post(this.endpoint, finalForm).subscribe({
       next: (response: any) => {
         this.isSentSuccessfull = true;

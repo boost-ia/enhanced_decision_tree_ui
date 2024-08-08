@@ -40,8 +40,6 @@ export class HistoryMessageComponent {
   }
 
   openForm(content: messageContentElement) {
-    console.log(content.formName);
-    console.log(form.FBFORM)
     if(!content.formName) return;
     switch(content.formName) {
       case form.FBFORM:

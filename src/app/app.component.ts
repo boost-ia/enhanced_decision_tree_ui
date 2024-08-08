@@ -45,4 +45,8 @@ export class AppComponent {
     return this.isChatShownService.isChatShown;
   }
 
+  get isMobile() {
+    return this.deviceService.isMobile();
+  }
+
 }

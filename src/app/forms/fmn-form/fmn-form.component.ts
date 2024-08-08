@@ -51,9 +51,6 @@ export class FmnFormComponent {
   }
 
   get imageValid(): boolean {
-    console.log('imageValid get')
-    console.log(this.screenShotInput?.isImageValid);
-    console.log(this.screenShotCertificateInput?.isImageValid);
     return this.screenShotInput?.isImageValid && this.screenShotCertificateInput?.isImageValid ? true : false
   }
 
