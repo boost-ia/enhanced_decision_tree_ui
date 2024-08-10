@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { form } from '../models/models';
 import { HttpClient } from '@angular/common/http';
+import { ResizeService } from './resize.service';
 
 @Injectable({
   providedIn: 'root'
@@ -14,10 +15,12 @@ export class FormDisplayService {
   isSentSuccessfull?: boolean;
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private resizeService: ResizeService
   ) { }
 
   setForm(form: form) {
+    this.resizeService.setFormSize();
     this.formDisplay = form
   }
 

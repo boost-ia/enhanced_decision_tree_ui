@@ -1,20 +1,12 @@
 @import '../../styles.scss';
 
-:host {
+#chatContent {
+
+    height: max-content;
 
     width: 400px;
-    min-height: 400px;
+    min-height: 600px;
     max-height: 90vh;
-
-    @media screen and (max-width: 768px) {
-        width: 95vw;
-        max-height: 95vh;
-        min-height: 0;
-
-        position: fixed;
-        bottom: 2.5vh;
-        left: 2.5vw;
-    }
 
     transition: height 0.3s;
 
@@ -24,6 +16,15 @@
     background-color: whitesmoke;
 
     border-radius: 10px;
+}
+
+#chatContent.isMobile {
+    width: 95vw;
+    height: 95vh;
+
+    position: fixed;
+    bottom: 2.5vh;
+    left: 2.5vw;
 }
 
 #header {
@@ -46,14 +47,14 @@
     margin-bottom: 10px;
     margin-top: auto;
 
-    @media screen and (max-width: 768px){
-        margin: 10px 10px 10px auto;
-    }
-
     color: white; 
     fill: white;
 
     background-color: $main-blue;
     border: none;
     border-radius: 10px;
+}
+
+#restart-button.isMobile {
+    margin: 10px 10px 10px auto;
 }

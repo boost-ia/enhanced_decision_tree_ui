@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostBinding } from '@angular/core';
 import { IsChatShownService } from '../services/is-chat-shown.service';
 import { city, historyMessage, message } from '../models/models';
 import { HttpClient } from '@angular/common/http';
@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
 import { Subject } from 'rxjs';
 import { HistoryMessageComponent } from './history-message/history-message.component';
 import { CitySelectorComponent } from './city-selector/city-selector.component';
+import { DeviceDetectorService } from 'ngx-device-detector';
+import { ResizeService } from '../services/resize.service';
 
 @Component({
   selector: 'app-chat',
@@ -18,6 +20,9 @@ import { CitySelectorComponent } from './city-selector/city-selector.component';
 export class ChatComponent {
 
   @ViewChild('messagesContainer') private messagesContainer!: ElementRef;
+  @ViewChild('chatContent') public chatContent!: ElementRef;
+
+  @HostBinding('class.isMobile') isApplied = false;
 
   messagesUrl = '/assets/messages.json';
 
@@ -37,7 +42,9 @@ export class ChatComponent {
 
   constructor(
     private isChatShownService: IsChatShownService,
-    private http: HttpClient
+    private http: HttpClient,
+    private deviceService: DeviceDetectorService,
+    private resizeService: ResizeService
   ) {
     this.updateMessageSubscrition = this.updateMessageSubject$.subscribe((id: number) => {
       this.updateMessage(id);
@@ -49,6 +56,9 @@ export class ChatComponent {
     this.correctionDecisionSubscription = this.correctDecisionSubject$.subscribe((data: any) => {
       this.correctDecision(data.messageIdToCorrect, data.messageChoosenId);
     });
+    if(this.deviceService.isMobile()) {
+      this.isApplied = true
+    }
   }
 
   ngOnInit() {
@@ -67,6 +77,7 @@ export class ChatComponent {
   }
 
   closeChat() {
+    this.resizeService.setIconSize();
     this.isChatShownService.setIsChatShown(false);
   }
 
@@ -138,6 +149,10 @@ export class ChatComponent {
       this.currentMessage = message;
     }
 
+  }
+
+  get isMobile() {
+    return this.deviceService.isMobile();
   }
 
 }

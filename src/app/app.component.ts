@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { IsChatShownService } from './services/is-chat-shown.service';
@@ -12,6 +12,7 @@ import { FdFormComponent } from './forms/fd-form/fd-form.component';
 import { FmaFormComponent } from './forms/fma-form/fma-form.component';
 import { FnpFormComponent } from './forms/fnp-form/fnp-form.component';
 import { FcsFormComponent } from './forms/fcs-form/fcs-form.component';
+import { ResizeService } from './services/resize.service';
 
 @Component({
   selector: 'app-root',
@@ -22,13 +23,16 @@ import { FcsFormComponent } from './forms/fcs-form/fcs-form.component';
 })
 export class AppComponent {
 
+  @ViewChild('mainChat') mainChat!: ChatComponent;
+
   title = 'chatbot_essonne_numerique';
   formNames = form
 
   constructor(
     private isChatShownService: IsChatShownService,
     public formDisplayService: FormDisplayService,
-    private deviceService: DeviceDetectorService
+    private deviceService: DeviceDetectorService,
+    private resizeService: ResizeService
   ) {
     if (this.deviceService.isMobile()) {
       this.isChatShownService.setIsChatShown(false);
@@ -37,8 +41,18 @@ export class AppComponent {
     }
   }
 
+  ngAfterViewInit() {
+    if(this.isMobile) {
+      this.resizeService.setIconSize();
+    } else {
+      this.resizeService.startChatObserver(this.mainChat);
+    }
+
+  }
+
   openChat() {
     this.isChatShownService.setIsChatShown(true);
+    this.resizeService.startChatObserver(this.mainChat);
   }
 
   get isChatShown() {
