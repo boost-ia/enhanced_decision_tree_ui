@@ -126,7 +126,7 @@
             {
                 "isLink": true,
                 "content": "Voir la carte", 
-                "link": "CARTE"
+                "link": "TODO"
             }
         ]
     },
@@ -170,7 +170,7 @@
             },
             {
                 "isLink": false, 
-                "content": "lien du formulaire",
+                "content": "Ouvrir le formulaire",
                 "isForm": true,
                 "formName": "FMAFORM"
             }
@@ -208,7 +208,7 @@
             },
             {
                 "isLink": false,
-                "content": "lien du formulaire", 
+                "content": "Ouvrir le formulaire", 
                 "isForm": true,
                 "formName": "FBFORM"
             }
@@ -224,7 +224,7 @@
             },
             {
                 "isLink": false, 
-                "content": "lien du formulaire",
+                "content": "Ouvrir le formulaire",
                 "isForm": true,
                 "formName": "FNPFORM"
             }
@@ -277,7 +277,7 @@
             {
                 "isLink": false,
                 "isForm": true,
-                "content": "Lien du formulaire",
+                "content": "Ouvrir le formulaire",
                 "formName":"FBFORM"
             },
             {
@@ -424,7 +424,7 @@
             {
                 "isLink": false,
                 "isForm": true,
-                "content": "Lien du formulaire",
+                "content": "Ouvrir le formulaire",
                 "formName": "FMNFORM"
             },
             {
@@ -475,7 +475,7 @@
             {
                 "isLink": false,
                 "isForm": true,
-                "content": "Lien du formulaire",
+                "content": "Ouvrir le formulaire",
                 "formName": "FMNFORM"
             }
         ],
@@ -505,7 +505,7 @@
             },
             {
                 "isLink": false,
-                "content": "lien du formulaire",
+                "content": "Ouvrir le formulaire",
                 "isForm": true,
                 "formName": "FDFORM"
             }
@@ -587,7 +587,7 @@
             },
             {
                 "isLink": false,
-                "content": "Formulaire",
+                "content": "Ouvrir le formulaire",
                 "isForm": true,
                 "formName": "FCSFORM"
             }

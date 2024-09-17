@@ -9,7 +9,7 @@ import { ResizeService } from './resize.service';
 export class FormDisplayService {
 
   formDisplay: form | undefined;
-  endpoint = 'http://localhost:8080/form-endpoint';
+  endpoint = 'https://chatbot.essonnenumerique.com:8080/form-endpoint';
 
   isLoading: boolean = false;
   isSentSuccessfull?: boolean;
