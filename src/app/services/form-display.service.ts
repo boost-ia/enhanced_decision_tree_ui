@@ -7,7 +7,7 @@ import { form } from '../models/models';
 export class FormDisplayService {
 
   openForm(form: form) {
-    let url = "http://localhost:4200/form";
+    let url = "https://chatbot.essonnenumerique.com/form";
     url += "?form=" + form.toString();
     window.open(url, "_blank");
   }

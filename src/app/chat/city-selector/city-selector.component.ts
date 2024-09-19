@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { Subject } from 'rxjs';
 import { city } from '../../models/models';
+import { ResizeService } from '../../services/resize.service';
 
 @Component({
   selector: 'app-city-selector',
@@ -21,7 +22,8 @@ export class CitySelectorComponent {
   citySubjectSubscription: any;
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private resizeService: ResizeService
   ) { }
 
   ngOnInit() {
@@ -29,6 +31,7 @@ export class CitySelectorComponent {
   }
 
   updateChoosenCity() {
+    this.resizeService.updateChatObserverWithoutChat();
     this.citySubject$.next(this.selectedCity)
   }
 

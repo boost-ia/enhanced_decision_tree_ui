@@ -94,6 +94,7 @@ export class ChatComponent {
   updateMessage(id: number) {
     if (this.currentMessage) {
       this.addMessageToHistory(this.currentMessage, id);
+      this.resizeService.updateChatObserverWithoutChat();
     }
     this.currentMessage = this.chatMessages[id];
     setTimeout(() => {

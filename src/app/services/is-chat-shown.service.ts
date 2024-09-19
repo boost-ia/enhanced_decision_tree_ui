@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { ResizeService } from './resize.service';
 
 @Injectable({
   providedIn: 'root'
