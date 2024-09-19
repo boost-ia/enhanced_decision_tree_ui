@@ -2,7 +2,7 @@
     <div *ngFor="let content of currentMessage.content">
         <p class="text-center" *ngIf="!content.isLink && !isContentForForm(content)">{{content.content}}</p>
         <button class="text-center btn btn-primary" (click)="openForm(content)" *ngIf="isContentForForm(content)" >{{content.content}}</button>
-        <a class="text-center" *ngIf="content.isLink" href="{{content.link}}" >{{content.content}}</a>
+        <a class="text-center" *ngIf="content.isLink" href="{{content.link}}" target="_blank" >{{content.content}}</a>
     </div>
 </div>
 <div id="answers" class="d-flex flex-wrap justify-content-center" >

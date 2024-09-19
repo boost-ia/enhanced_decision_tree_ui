@@ -126,7 +126,7 @@
             {
                 "isLink": true,
                 "content": "Voir la carte", 
-                "link": "TODO"
+                "link": "https://essonnenumerique.com/suis-je-eligible/calendrier-de-deploiement/"
             }
         ]
     },
@@ -272,7 +272,7 @@
             },
             {
                 "isLink": false,
-                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro est nous permettra de suvre votre. problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous conucter en clouant surle leni suivant:"
+                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro est nous permettra de suvre votre. problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous contacter en cliquant sur le lien suivant:"
             },
             {
                 "isLink": false,
@@ -282,7 +282,7 @@
             },
             {
                 "isLink": false,
-                "content": "En zone publique, dans le droit du terrain (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient aux propriétaires d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les trave acer damenta a re otiquer la suite réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée Vous pouvez également demander un devis à l'exploitant du réseau XoFibre."
+                "content": "En zone publique, dans le droit du terrain (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient aux propriétaires d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les trave acer damenta a re otiquer la suite réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée Vous pouvez également demander un devis à l'exploitant du réseau XpFibre."
             }
         ],
         "answers": []
@@ -343,6 +343,12 @@
             {
                 "isLink": false,
                 "content": "Afin que nous puissions suivre votre problématique auprès de l'exploitant du réseau XpFibre, nous vous invitons à contacter Essonne Numérique en cliquant sur le lien suivant: "
+            },
+            {
+                "isLink": false,
+                "content": "Ouvrir le formulaire",
+                "isForm": true,
+                "formName": "FDFORM"
             }
         ],
         "answers": []
