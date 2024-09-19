@@ -1,16 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, ViewChild, viewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
-import { form } from '../../models/models';
 import { ImageInputComponent } from '../image-input/image-input.component';
-import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
 
 @Component({
   selector: 'app-fmn-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, SuccessfulRequestDisplayComponent],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
   templateUrl: './fmn-form.component.html',
   styleUrl: './fmn-form.component.scss'
 })
@@ -29,33 +27,20 @@ export class FmnFormComponent {
     comment: new FormControl('', [Validators.required])
   })
 
-  operators: string[] = []
-
-  constructor(
-    private httpClient: HttpClient,
-    private formService: FormDisplayService
-  ) {
-    this.httpClient.get('/assets/operators.json').subscribe({
-      next: (operators: any) => {
-        this.operators = operators
-      }
-    })
+  getForm() {
+    return this.fmnForm.value;
   }
 
-  closeChat() {
-    this.formService.close()
+  getScreenShot() {
+    return this.screenShotInput?.image;
   }
 
-  submitForm() {
-    this.formService.sendForm(this.fmnForm.value, form.FMNFORM, this.screenShotInput?.getImageFile()!, this.screenShotCertificateInput?.getImageFile()!)
+  getCertificate() {
+    return this.screenShotCertificateInput?.image;
   }
 
-  get imageValid(): boolean {
-    return this.screenShotInput?.isImageValid && this.screenShotCertificateInput?.isImageValid ? true : false
-  }
-
-  get isSuccessful() {
-    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
+  get isDisabled() {
+    return this.fmnForm.invalid || !this.screenShotInput?.isImageValid || !this.screenShotCertificateInput?.isImageValid;
   }
 
 }

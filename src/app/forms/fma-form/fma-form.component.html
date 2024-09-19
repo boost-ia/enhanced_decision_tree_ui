@@ -1,18 +1,4 @@
 <form [formGroup]="fmaForm" >
-    <button 
-        id="close-button" 
-        class="close-button"
-        aria-label="Fermer le formulaire"
-        (click)="closeChat()"
-        style="background: none; border: none; padding: 0; cursor: pointer; top: 5px; right: 5px">
-        <svg 
-            style="height: 30px; width: 30px" 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 384 512">
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
-        </svg>
-    </button>
     <h2>Formulaire de modification d'adresse :</h2>
     <label for="name">Nom :</label>
     <input type="text" formControlName="name" id="name" name="name">
@@ -26,7 +12,7 @@
     <input type="text" formControlName="correctAddress" id="correctAddress" name="correctAddress">
     <div id="choice">
         <label for="imageOverLink">Lien ou image :</label>
-        <input type="checkbox" formControlName="imageOverLink" style="margin-left: 5px" >
+        <input id="checkbox" type="checkbox" formControlName="imageOverLink" style="margin-left: 5px" >
     </div>
     <label for="cartographyLink" *ngIf="!fmaForm.value.imageOverLink">Lien cartographique :</label>
     <input *ngIf="!fmaForm.value.imageOverLink" type="text" formControlName="cartographyLink" id="cartographyLink" name="cartographyLink">
@@ -34,10 +20,4 @@
     <app-image-input #picture *ngIf="fmaForm.value.imageOverLink" [text]="'Image de la carte'"></app-image-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
-    <app-successful-request-display></app-successful-request-display>
-    <button 
-        [disabled]="fmaForm.invalid || !cartographyValid || isSuccessful" 
-        class="btn btn-primary" 
-        style="margin-top: 20px"
-        (click)="submitForm()">Envoyer</button>
 </form>

@@ -3,7 +3,6 @@
 form {
 
     position: relative;
-    background-color: white;
 
     padding: 30px;
     border-radius: 10px;
@@ -16,11 +15,12 @@ form label {
     margin-top: 20px
 }
 
-.btn-primary {
-    background-color: $main-blue;
-    border: none;
-}
 
-.close-button {
-    position: absolute
+input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+
+    border: 2px solid $main-blue;
+
+    width: 100%;
 }

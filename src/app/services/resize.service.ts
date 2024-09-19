@@ -42,11 +42,6 @@ export class ResizeService {
     this.resizeSubject.next({ height: 90, heightUnit: 'px', width: 90, widthUnit: 'px' });
   }
 
-  setFormSize(): void {
-    this.stopChatObserver();
-    this.resizeSubject.next({ height: 100, heightUnit: '%', width: 100, widthUnit: '%' });
-  }
-
   public startChatObserver(chat: ChatComponent): void {
     this.chatObserver.observe(chat.chatContent.nativeElement);
   }

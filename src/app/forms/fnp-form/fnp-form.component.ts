@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { FormDisplayService } from '../../services/form-display.service';
-import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
-import { form } from '../../models/models';
 
 @Component({
   selector: 'app-fnp-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, SuccessfulRequestDisplayComponent],
+  imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './fnp-form.component.html',
   styleUrl: './fnp-form.component.scss'
 })
@@ -21,22 +18,12 @@ export class FnpFormComponent {
     totalOutletNumber: new FormControl('', Validators.required)
   }) 
 
-  constructor(
-    private formService: FormDisplayService
-  ) {
-
+  getForm() {
+    return this.fnpForm.value;
   }
 
-  closeChat() {
-    this.formService.close()
-  }
-
-  submitForm() {
-    this.formService.sendForm(this.fnpForm.value, form.FNPFORM)
-  }
-
-  get isSuccessful() {
-    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
+  get isDisabled() {
+    return this.fnpForm.invalid;
   }
 
 }

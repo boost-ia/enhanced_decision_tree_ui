@@ -3,13 +3,12 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ImageInputComponent } from '../image-input/image-input.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
-import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
 import { form } from '../../models/models';
 
 @Component({
   selector: 'app-fd-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, SuccessfulRequestDisplayComponent],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
   templateUrl: './fd-form.component.html',
   styleUrl: './fd-form.component.scss'
 })
@@ -31,22 +30,18 @@ export class FdFormComponent {
     private formService: FormDisplayService
   ) {
 
+  } 
+
+  getForm() {
+    return this.fdForm.value;
   }
 
-  closeChat() {
-    this.formService.close()
+  getScreenShot() {
+    return this.pictureInput?.image;
   }
 
-  submitForm() {
-    this.formService.sendForm(this.fdForm.value, form.FDFORM, this.pictureInput?.getImageFile()!)
-  }
-
-  get imageValid(): boolean {
-    return this.pictureInput?.isImageValid ? true : false
-  }
-
-  get isSuccessful() {
-    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
+  get isDisabled() {
+    return this.fdForm.invalid || !this.pictureInput?.isImageValid;
   }
 
 }

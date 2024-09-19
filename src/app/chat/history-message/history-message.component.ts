@@ -43,22 +43,22 @@ export class HistoryMessageComponent {
     if(!content.formName) return;
     switch(content.formName) {
       case form.FBFORM:
-        this.formDisplayService.setForm(form.FBFORM);
+        this.formDisplayService.openForm(form.FBFORM);
         break;
       case form.FMNFORM:
-        this.formDisplayService.setForm(form.FMNFORM);
+        this.formDisplayService.openForm(form.FMNFORM);
         break;
       case form.FDFORM:
-        this.formDisplayService.setForm(form.FDFORM);
+        this.formDisplayService.openForm(form.FDFORM);
         break;
       case form.FMAFORM:
-        this.formDisplayService.setForm(form.FMAFORM);
+        this.formDisplayService.openForm(form.FMAFORM);
         break;
       case form.FNPFORM:
-        this.formDisplayService.setForm(form.FNPFORM);
+        this.formDisplayService.openForm(form.FNPFORM);
         break;
       case form.FCSFORM:
-        this.formDisplayService.setForm(form.FCSFORM);
+        this.formDisplayService.openForm(form.FCSFORM);
         break;
     }
   }

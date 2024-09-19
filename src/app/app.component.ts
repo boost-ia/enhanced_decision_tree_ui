@@ -23,44 +23,7 @@ import { ResizeService } from './services/resize.service';
 })
 export class AppComponent {
 
-  @ViewChild('mainChat') mainChat!: ChatComponent;
-
   title = 'chatbot_essonne_numerique';
   formNames = form
-
-  constructor(
-    private isChatShownService: IsChatShownService,
-    public formDisplayService: FormDisplayService,
-    private deviceService: DeviceDetectorService,
-    private resizeService: ResizeService
-  ) {
-    if (this.deviceService.isMobile()) {
-      this.isChatShownService.setIsChatShown(false);
-    } else {
-      this.isChatShownService.setIsChatShown(true);
-    }
-  }
-
-  ngAfterViewInit() {
-    if(this.isMobile) {
-      this.resizeService.setIconSize();
-    } else {
-      this.resizeService.startChatObserver(this.mainChat);
-    }
-
-  }
-
-  openChat() {
-    this.isChatShownService.setIsChatShown(true);
-    this.resizeService.startChatObserver(this.mainChat);
-  }
-
-  get isChatShown() {
-    return this.isChatShownService.isChatShown;
-  }
-
-  get isMobile() {
-    return this.deviceService.isMobile();
-  }
 
 }

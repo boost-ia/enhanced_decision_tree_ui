@@ -2,13 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ImageInputComponent } from '../image-input/image-input.component';
 import { FormDisplayService } from '../../services/form-display.service';
-import { SuccessfulRequestDisplayComponent } from '../successful-request-display/successful-request-display.component';
 import { form } from '../../models/models';
 
 @Component({
   selector: 'app-fcs-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, ImageInputComponent, SuccessfulRequestDisplayComponent],
+  imports: [FormsModule, ReactiveFormsModule, ImageInputComponent],
   templateUrl: './fcs-form.component.html',
   styleUrl: './fcs-form.component.scss'
 })
@@ -31,20 +30,16 @@ export class FcsFormComponent {
 
   }
 
-  closeChat() {
-    this.formService.close()
+  getForm() {
+    return this.fcsForm.value;
   }
 
-  submitForm() {
-    this.formService.sendForm(this.fcsForm.value, form.FCSFORM, this.conventionInput?.getImageFile()!)
+  getConvention() {
+    return this.conventionInput?.image;
   }
 
-  get imageValid() {
-    return this.conventionInput? this.conventionInput.isImageValid : false
-  }
-
-  get isSuccessful() {
-    return this.formService.isSentSuccessfull ? this.formService.isSentSuccessfull : false
+  get isDisabled() {
+    return this.fcsForm.invalid || !this.conventionInput?.isImageValid;
   }
 
 }
