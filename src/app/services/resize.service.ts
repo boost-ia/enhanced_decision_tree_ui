@@ -21,17 +21,13 @@ export class ResizeService {
 
       const maxPossibleHeightOfChat = lastChildScrollHeight + 30;
 
-      console.log('maxPossibleHeightOfChat', maxPossibleHeightOfChat);
-      console.log('this.pageHeight', this.pageHeight);
-      console.log('height', height);
-
-      if(maxPossibleHeightOfChat > this.pageHeight*0.9) {
-        height = this.pageHeight*0.9;
+      if (maxPossibleHeightOfChat > this.pageHeight * 0.9) {
+        height = this.pageHeight * 0.9;
       } else {
         height = maxPossibleHeightOfChat;
       }
 
-      if(this.deviceService.isMobile()) {
+      if (this.deviceService.isMobile()) {
         this.resizeSubject.next({ height: 100, heightUnit: '%', width: 100, widthUnit: '%' });
         return;
       }
@@ -47,12 +43,12 @@ export class ResizeService {
     this.pageHeight = window.innerHeight;
 
     window.addEventListener('message', (event) => {
-      if(event.data.action === 'getHeight') {
+      if (event.data.action === 'getHeight') {
         this.pageHeight = event.data.height;
         this.updateChatObserverWithoutChat();
       }
     });
-    window.parent.postMessage({'action': 'getHeight'}, '*');
+    window.parent.postMessage({ 'action': 'getHeight' }, '*');
 
     this.resizeSubject.subscribe(({ height, heightUnit, width, widthUnit }) => {
       this.sendMessageToParent(height, heightUnit, width, widthUnit);
@@ -61,7 +57,7 @@ export class ResizeService {
 
   private sendMessageToParent(height: number, heightUnit: string, width: number, widthUnit: string): void {
     console.log('send message to parent');
-    window.parent.postMessage({'action': 'resize', 'height': `${height}${heightUnit}`, 'width': `${width}${widthUnit}` }, '*');
+    window.parent.postMessage({ 'action': 'resize', 'height': `${height}${heightUnit}`, 'width': `${width}${widthUnit}` }, '*');
   }
 
   public setIconSize(): void {
@@ -76,7 +72,7 @@ export class ResizeService {
 
   public updateChatObserverWithoutChat(): void {
     this.chatObserver.disconnect();
-    if(this.chat) {
+    if (this.chat) {
       this.startChatObserver(this.chat);
     }
   }
