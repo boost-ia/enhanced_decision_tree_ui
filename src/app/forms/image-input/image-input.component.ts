@@ -80,6 +80,13 @@ export class ImageInputComponent {
     return this.image;
   }
 
+  get isThereAnImage(): boolean {
+    if (this.image.size === 0) {
+      return false;
+    }
+    return true;
+  }
+
   get isImageValid(): boolean {
     if (this.image.size === 0) {
       return false;

@@ -8,13 +8,13 @@
     <input type="text" formControlName="mail" id="mail" name="mail">
     <label for="firstDemandDate">Date de la première demande :</label>
     <input type="date" formControlName="firstDemandDate" id="firstDemandDate" name="firstDemandDate">
-    <label for="address">Adresse :</label>
+    <label for="address">Adresse du logement:</label>
     <input type="text" formControlName="address" id="address" name="address">
-    <label>Capture d'écran :</label>
+    <label>Pièce-jointe capture d'écran :</label>
     <app-image-input #screenShot [text]="'Encart capture d\'écran'" ></app-image-input>
-    <label for="dossierNumber">Numéro du dossier :</label>
+    <label for="dossierNumber">Numéro de dossier XpFibre communiqué via leur plateforme:</label>
     <input type="text" formControlName="dossierNumber" id="dossierNumber" name="dossierNumber">
-    <label>Certificat d'adressage délivré par la mairie :</label>
+    <label>Pièce-jointe certificat d'adressage délivré par la mairie :</label>
     <app-image-input #certificate [text]="'Certificat d\'adressage délivré par la mairie'" ></app-image-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>

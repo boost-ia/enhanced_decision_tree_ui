@@ -10,14 +10,10 @@
     <input type="text" formControlName="incorrectAddress" id="incorrectAddress" name="incorrectAddress">
     <label for="correctAddress">Adresse correcte :</label>
     <input type="text" formControlName="correctAddress" id="correctAddress" name="correctAddress">
-    <div id="choice">
-        <label for="imageOverLink">Lien ou image :</label>
-        <input id="checkbox" type="checkbox" formControlName="imageOverLink" style="margin-left: 5px" >
-    </div>
-    <label for="cartographyLink" *ngIf="!fmaForm.value.imageOverLink">Lien cartographique :</label>
-    <input *ngIf="!fmaForm.value.imageOverLink" type="text" formControlName="cartographyLink" id="cartographyLink" name="cartographyLink">
-    <label for="map-picture" *ngIf="fmaForm.value.imageOverLink">Image de la carte :</label>
-    <app-image-input #picture *ngIf="fmaForm.value.imageOverLink" [text]="'Image de la carte'"></app-image-input>
+    <label for="cartographyLink">Lien cartographique :</label>
+    <input type="text" formControlName="cartographyLink" id="cartographyLink" name="cartographyLink">
+    <label for="map-picture" >Image de la carte :</label>
+    <app-image-input #picture [text]="'Image de la carte'"></app-image-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
 </form>

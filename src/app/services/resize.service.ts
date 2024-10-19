@@ -56,7 +56,6 @@ export class ResizeService {
   }
 
   private sendMessageToParent(height: number, heightUnit: string, width: number, widthUnit: string): void {
-    console.log('send message to parent');
     window.parent.postMessage({ 'action': 'resize', 'height': `${height}${heightUnit}`, 'width': `${width}${widthUnit}` }, '*');
   }
 

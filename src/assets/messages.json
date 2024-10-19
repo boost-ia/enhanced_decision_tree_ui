@@ -57,7 +57,7 @@
             },
             {
                 "isLink": true,
-                "content": "Consulter le site de votre OI.",
+                "content": "Cliquez sur ce lien pour trouver votre opérateur d’infrastructure",
                 "link": "link"
             }
         ],
@@ -107,12 +107,12 @@
         ],
         "answers": [
             {
-                "content": "Non", 
-                "nextMessageId": 6
-            }, 
-            {
                 "content": "Oui", 
                 "nextMessageId": 7
+            }, 
+            {
+                "content": "Non", 
+                "nextMessageId": 6
             }
         ]
     },
@@ -121,7 +121,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Nous vous invitons dès à présent à tester votre éligibilité."
+                "content": "Nous vous invitons dès à présent à tester votre éligibilité en cliquant ici."
             },
             {
                 "isLink": true,
@@ -182,11 +182,11 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Essonne Numérique déploie un réseau fibre optique neutre, ouvert et libre d'accès à tous les opérateurs. Il n'y a aucune exclusivité d'opérateur. Chaque opérateur est libre de venir ou non sur notre réseau selon sa propre stratégie commerciale."
+                "content": "Essonne numérique déploie un réseau fibre optique neutre, ouvert et libre d'accès à tous les opérateurs. Il n'y a aucune exclusivité d'opérateur. Chaque opérateur est libre de venir ou non sur notre réseau selon sa propre stratégie commerciale."
             },
             {
                 "isLink": false,
-                "content": "Si votre opérateur ne répond pas à vos besoins vous êtes bien évidemment libre d'en choisir un autre."
+                "content": "Si votre opérateur ne répond pas à vos besoins, vous êtes bien évidemment libre d'en choisir un autre."
             }
         ],
         "answers": []
@@ -200,11 +200,11 @@
             },
             {
                 "isLink": false,
-                "content": "Nous vous invitons à contacter votre opérateur afin de lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (Xpfibre). Ce numéro nous permettre de suivre votre demande."
+                "content": "Nous vous invitons à contacter votre opérateur afin de lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (Xpfibre). Ce numéro nous permettra de suivre votre demande."
             },
             {
                 "isLink": false,
-                "content": "Une fois ce numéro d'incident obtenu, vous pourrez nous contacteren cliquant sur le lien suivant:"
+                "content": "Une fois ce numéro d'incident obtenu, vous pourrez nous contacter en cliquant sur le lien suivant:"
             },
             {
                 "isLink": false,
@@ -224,7 +224,7 @@
             },
             {
                 "isLink": false, 
-                "content": "Ouvrir le formulaire",
+                "content": "Complétez le formulaire",
                 "isForm": true,
                 "formName": "FNPFORM"
             }
@@ -240,7 +240,7 @@
                 "nextMessageId": 14
             },
             {
-                "content": "Le technicien rencontre une problématique de raccordement, que faire ?",
+                "content": "Le technicien rencontre une problématique de raccordement, (telle que : erreur de route optique, absence de continuité, mutation de boîtier …), que faire ?",
                 "nextMessageId": 17
             }
         ]
@@ -264,7 +264,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "En zone publique (en dehors du droit du terrain ; roue et/ou trottoir qui n'est pas dans l'alignement du droit du terrain) c'est le responsable d'infrastructure qui est responsable des opérations."
+                "content": "En zone publique (<b>en dehors du droit du terrain</b>; route et/ou trottoir qui n'est pas dans l'alignement du droit du terrain) c'est le responsable d'infrastructure qui est responsable des opérations."
             },
             {
                 "isLink": false,
@@ -272,7 +272,7 @@
             },
             {
                 "isLink": false,
-                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro est nous permettra de suvre votre. problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous contacter en cliquant sur le lien suivant:"
+                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro nous permettra de suvre votre problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous contacter en cliquant sur le lien suivant:"
             },
             {
                 "isLink": false,
@@ -282,7 +282,7 @@
             },
             {
                 "isLink": false,
-                "content": "En zone publique, dans le droit du terrain (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient aux propriétaires d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les trave acer damenta a re otiquer la suite réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée Vous pouvez également demander un devis à l'exploitant du réseau XpFibre."
+                "content": "En zone publique, <b>dans le droit du terrain</b> (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient aux propriétaires d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les travaux nécessaires qui permettront par votre raccordement à la fibre optique. Ces réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée. Vous pouvez également demander un devis à l'exploitant du réseau XpFibre."
             }
         ],
         "answers": []
@@ -342,7 +342,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Afin que nous puissions suivre votre problématique auprès de l'exploitant du réseau XpFibre, nous vous invitons à contacter Essonne Numérique en cliquant sur le lien suivant: "
+                "content": "Afin que nous puissions suivre votre problématique auprès de l'exploitant du réseau XpFibre, nous vous invitons à contacter Essonne numérique en cliquant sur le lien suivant: "
             },
             {
                 "isLink": false,
@@ -408,6 +408,10 @@
             },
             {
                 "isLink": false,
+                "content": ""
+            },
+            {
+                "isLink": false,
                 "content": "Étape 1:"
             },
             {
@@ -418,6 +422,10 @@
                 "isLink": true,
                 "content": "Lien XpFibre",
                 "link": "https://xpfibre.com/"
+            },
+            {
+                "isLink": false,
+                "content": ""
             },
             {
                 "isLink": false,
@@ -435,6 +443,10 @@
             },
             {
                 "isLink": false,
+                "content": ""
+            },
+            {
+                "isLink": false,
                 "content": "Étape 3:"
             },
             {
@@ -443,7 +455,7 @@
             },
             {
                 "isLink": false,
-                "content": "Vous devez procéder à la pause d'un fourreau, allant du point d'arrivée de la fibre optique au sein de votre maison jusqu'au domaine public. La pose est sous votre responsabilité (comme dest déjà le cas pour l'électricité et l'eau."
+                "content": "Vous devez procéder à la pause d'un fourreau, allant du point d'arrivée de la fibre optique au sein de votre maison jusqu'au domaine public. La pose est sous votre responsabilité (comme dest déjà le cas pour l'électricité et l'eau)."
             },
             {
                 "isLink": false,
@@ -548,11 +560,11 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Pour les nouvelles constructions, le promoteur doit solliciter XpFibre (l'exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique). Pour information, voici le processus détaillé que doit respecter le promoteur."
+                "content": "Pour les nouvelles constructions, le promoteur doit solliciter XpFibre (l'exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique, le principe reste le même). Pour information, voici le processus détaillé que doit respecter le promoteur."
             },
             {
                 "isLink": true,
-                "content": "lien info",
+                "content": "Cliquez sur le lien",
                 "link": "https://xpfibre.com/"
             },
             {
@@ -589,7 +601,11 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Je télécharge la convention (lien), la complète et la renvoie via le lien ci-après. Essonne numérique traitera votre demande dans les meilleurs délais."
+                "content": "Je télécharge la convention <a href=\"/assets/Convention_immeuble_grand_bailleur_SMO_Essonne_numerique.pdf\" download=\"Convention_immeuble_grand_bailleur_SMO_Essonne_numerique.pdf\">ici</a>."
+            },
+            {
+                "isLink": false,
+                "content": "Je la complète et la renvoie via le formulaire ci-après. Essonne numérique traitera votre demande dans les meilleurs délais."
             },
             {
                 "isLink": false,
@@ -608,7 +624,7 @@
             },
             {
                 "isLink": false,
-                "content": "En effet, pour les nouvelles constructions, le promoteur doit solliciter XpFibre ('exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique, le principe reste le même)."
+                "content": "En effet, pour les nouvelles constructions, le promoteur doit solliciter XpFibre (l'exploitant du réseau), pour raccorder le pré-fibrage au réseau principal fibre optique (comme lorsqu'il contacte ENEDIS pour le raccordement électrique, le principe reste le même)."
             },
             {
                 "isLink": false,

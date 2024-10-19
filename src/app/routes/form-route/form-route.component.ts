@@ -45,8 +45,6 @@ export class FormRouteComponent {
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.formDisplay = params['form'];
-      console.log(this.formDisplay);
-      console.log(this.formNames.FBFORM)
     });
   }
 
@@ -70,7 +68,7 @@ export class FormRouteComponent {
           finalForm.append('screenShot', screenShotFmn);
         }
         if (certificateFmn) {
-          finalForm.append('certificate', certificateFmn);
+          finalForm.append('certificateScreenShot', certificateFmn);
         }
         break;
       case 'FDFORM':
@@ -94,7 +92,7 @@ export class FormRouteComponent {
         form = this.fcsFormComponent.getForm();
         let screenShotFcs = this.fcsFormComponent.getConvention();
         if (screenShotFcs) {
-          finalForm.append('convention', screenShotFcs);
+          finalForm.append('certificateScreenShot', screenShotFcs);
         }
         break;
       default:

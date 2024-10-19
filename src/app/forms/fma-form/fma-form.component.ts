@@ -23,7 +23,6 @@ export class FmaFormComponent {
     mail: new FormControl('', [Validators.required]),
     incorrectAddress: new FormControl('', [Validators.required]),
     correctAddress: new FormControl('', Validators.required),
-    imageOverLink: new FormControl(false),
     cartographyLink: new FormControl(''),
     comment: new FormControl('', [Validators.required])
   })
@@ -39,12 +38,12 @@ export class FmaFormComponent {
   }
 
   get cartographyValid(): boolean {
-    const imageOverLink = this.fmaForm.value.imageOverLink;
-    if(imageOverLink) {
-      return this.pictureInput?.isImageValid ? true : false
-    } else {
-      return (this.fmaForm.value.cartographyLink?.length ?? 0) > 0
+    //return true if the link is !empty or the picture is !empty
+    if(this.pictureInput?.isThereAnImage) {
+      return true;
     }
+
+    return this.fmaForm.get('cartographyLink')?.value !== '';
   }
 
   getScreenShot() {
