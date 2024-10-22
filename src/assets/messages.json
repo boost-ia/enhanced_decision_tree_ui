@@ -68,31 +68,31 @@
         "content": [],
         "answers": [
             {
-                "content": "Je ne comprends pas pourquoi je ne suis pas éligible à la fibre optique.",
+                "content": "Je ne comprends pas pourquoi je ne suis pas éligible à la fibre optique",
                 "nextMessageId": 5
             },
             {
-                "content": "Je bénéficie de la fibre optique mais je n'ai plus internet.",
+                "content": "Je bénéficie de la fibre optique mais je n'ai plus internet",
                 "nextMessageId": 11
             },
             {
-                "content": "Je bénéficie de la fibre optique mais j'ai besoin de prise(s) supplémentaire(s).",
+                "content": "Je bénéficie de la fibre optique mais j'ai besoin de prise(s) supplémentaire(s)",
                 "nextMessageId": 12
             },
             {
-                "content": "J'ai souscrit à la fibre optique mais le technicien n'a pas réussi à me raccorder.",
+                "content": "J'ai souscrit à la fibre optique mais le technicien n'a pas réussi à me raccorder",
                 "nextMessageId": 13
             },
             {
-                "content": "J'emménage dans une construction neuve.",
+                "content": "J'emménage dans une construction neuve",
                 "nextMessageId": 20
             },
             {
-                "content": "J'ai constaté une dégradation sur le réseau fibre optique en dehors de chez moi.",
+                "content": "J'ai constaté une dégradation sur le réseau fibre optique en dehors de chez moi",
                 "nextMessageId": 26
             },
             {
-                "content": "Autre question.",
+                "content": "Autre question",
                 "nextMessageId": 27
             }
         ]
@@ -121,12 +121,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Nous vous invitons dès à présent à tester votre éligibilité en cliquant ici."
-            },
-            {
-                "isLink": true,
-                "content": "Voir la carte", 
-                "link": "https://essonnenumerique.com/suis-je-eligible/calendrier-de-deploiement/"
+                "content": "Nous vous invitons dès à présent à tester votre éligibilité en cliquant ici. <a href='https://essonnenumerique.com/suis-je-eligible/calendrier-de-deploiement' rel='noreferrer'>Voir la carte</a> "
             }
         ]
     },
@@ -135,15 +130,15 @@
         "content": [],
         "answers": [
             {
-                "content": "Oui mais,\n sur la carte je ne vois pas de point sur mon logement.",
+                "content": "Oui mais,\n sur la carte je ne vois pas de point sur mon logement",
                 "nextMessageId": 8
             },
             {
-                "content": "Oui mais,\n sur la carte l'adresse de mon logement est incorrecte.",
+                "content": "Oui mais,\n sur la carte l'adresse de mon logement est incorrecte",
                 "nextMessageId": 9
             },
             {
-                "content": "Oui mais,\n je ne suis pas éligible à la fibre optique chez mon opérateur.",
+                "content": "Oui mais,\n je ne suis pas éligible à la fibre optique chez mon opérateur",
                 "nextMessageId": 10
             }
         ]
@@ -153,11 +148,11 @@
         "content": [],
         "answers": [
             {
-                "content": "Mon logement est neuf.",
+                "content": "Mon logement est neuf",
                 "nextMessageId": 20
             },
             {
-                "content": "Mon logement est ancien.",
+                "content": "Mon logement est ancien",
                 "nextMessageId": 9
             }
         ]
@@ -220,11 +215,11 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Veuillez remplir ce formulaire:"
+                "content": "Veuillez remplir ce formulaire :"
             },
             {
                 "isLink": false, 
-                "content": "Complétez le formulaire",
+                "content": "Ouvrir le formulaire",
                 "isForm": true,
                 "formName": "FNPFORM"
             }
@@ -250,11 +245,11 @@
         "content": [],
         "answers": [
             {
-                "content": "L'obstruction se trouve en zone publique (en dehors de ma parcelle).",
+                "content": "L'obstruction se trouve en zone publique (en dehors de ma parcelle)",
                 "nextMessageId": 15
             },
             {
-                "content": "L'obstruction se trouve en zone privée (sur ma parcelle).",
+                "content": "L'obstruction se trouve en zone privée (sur ma parcelle)",
                 "nextMessageId": 16
             }
         ]
@@ -272,7 +267,7 @@
             },
             {
                 "isLink": false,
-                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro nous permettra de suvre votre problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous contacter en cliquant sur le lien suivant:"
+                "content": "De fait, dans cette zone publique, nous vous invitons à relancer votre opérateur et à lui demander le numéro d'incident qu'il doit ouvrir auprès de l'exploitant du réseau (XpFibre). Ce numéro nous permettra de suivre votre problématique auprès de l'exploitant du réseau XpFibre. Une fois ce numéro d'incident obtenu, vous pourrez nous contacter en cliquant sur le lien suivant:"
             },
             {
                 "isLink": false,
@@ -282,7 +277,11 @@
             },
             {
                 "isLink": false,
-                "content": "En zone publique, <b>dans le droit du terrain</b> (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient aux propriétaires d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les travaux nécessaires qui permettront par votre raccordement à la fibre optique. Ces réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée. Vous pouvez également demander un devis à l'exploitant du réseau XpFibre."
+                "content": ""
+            },
+            {
+                "isLink": false,
+                "content": "En zone publique, <b>dans le droit du terrain</b> (route et/ou trottoir au droit de mon terrain), lorsque le technicien tente le raccordement de votre domicile et qu'il constate un blocage dans le droit du terrain, autrement dit que le fourreau n'est pas utilisable, il appartient au propriétaire d'assurer les travaux car il s'agit de sa responsabilité (tout comme l'eau et l'électricité; Article 332-15 du code de l'urbanisme, article D407-2 du Code des postes et des communications électroniques). Nous vous invitons à entreprendre les travaux nécessaires qui permettront votre raccordement à la fibre optique. Ces réparations peuvent être réalisées par le propriétaire ou par une entreprise spécialisée. Vous pouvez également demander un devis à l'exploitant du réseau XpFibre."
             }
         ],
         "answers": []
@@ -348,7 +347,7 @@
                 "isLink": false,
                 "content": "Ouvrir le formulaire",
                 "isForm": true,
-                "formName": "FDFORM"
+                "formName": "FBFORM"
             }
         ],
         "answers": []
@@ -358,11 +357,11 @@
         "content": [],
         "answers": [
             {
-                "content": "Maison individuelle neuve.",
+                "content": "Maison individuelle neuve",
                 "nextMessageId": 21
             },
             {
-                "content": "Lotissement ou immeuble neuf.",
+                "content": "Lotissement ou immeuble neuf",
                 "nextMessageId": 33
             }
         ]
@@ -372,11 +371,11 @@
         "content": [],
         "answers": [
             {
-                "content": "Je construis moi-même la maison.",
+                "content": "Je construis moi-même la maison",
                 "nextMessageId": 22
             },
             {
-                "content": "Je passe par un promoteur immobilier.",
+                "content": "Je passe par un promoteur immobilier",
                 "nextMessageId": 33
             }
         ]
@@ -386,15 +385,15 @@
         "content": [],
         "answers": [
             {
-                "content": "Je n'ai pas fait de demande sur la plateforme dédiée d'XpFibre.",
+                "content": "Je n'ai pas fait de demande sur la plateforme dédiée d'XpFibre",
                 "nextMessageId": 23
             },
             {
-                "content": "J'ai déjà saisi ma demande sur la plateforme XpFibre, fourni les documents demandés, payé un forfait proposé par XpFibre, mais je n'ai pas de retours depuis plus de 3 mois.",
+                "content": "J'ai déjà saisi ma demande sur la plateforme XpFibre, fourni les documents demandés, payé un forfait proposé par XpFibre, mais je n'ai pas de retours depuis plus de 3 mois",
                 "nextMessageId": 24
             },
             {
-                "content": "J'ai déjà saisi ma demande sur la plateforme XpFibre, fourni les documents demandés, mais je n'ai pas payé un forfait proposé par XpFibre.",
+                "content": "J'ai déjà saisi ma demande sur la plateforme XpFibre, fourni les documents demandés, mais je n'ai pas payé un forfait proposé par XpFibre",
                 "nextMessageId": 25
             }
         ]
@@ -425,12 +424,13 @@
             },
             {
                 "isLink": false,
-                "content": ""
+                "content": "<br>"
             },
             {
                 "isLink": false,
                 "content": "Étape 2:"
             },
+            
             {
                 "isLink": false,
                 "content": "En complément de votre demande auprès d'XpFibre, vous pouvez nous contacter en cliquant sur le lien suivant:"
@@ -443,7 +443,7 @@
             },
             {
                 "isLink": false,
-                "content": ""
+                "content": "<br>"
             },
             {
                 "isLink": false,
@@ -451,19 +451,11 @@
             },
             {
                 "isLink": false,
-                "content": "[en zone privé]"
+                "content": "<b>[En zone privée]</b> Vous devez procéder à la pause d'un fourreau, allant du point d'arrivée de la fibre optique au sein de votre maison jusqu'au domaine public. La pose est sous votre responsabilité (comme dest déjà le cas pour l'électricité et l'eau)."
             },
             {
                 "isLink": false,
-                "content": "Vous devez procéder à la pause d'un fourreau, allant du point d'arrivée de la fibre optique au sein de votre maison jusqu'au domaine public. La pose est sous votre responsabilité (comme dest déjà le cas pour l'électricité et l'eau)."
-            },
-            {
-                "isLink": false,
-                "content": "[en zone publique]"
-            },
-            {
-                "isLink": false,
-                "content": "Vous avez la possibilité de solliciter directement XpFibre pour effectuer les travaux, et demander un devis en cliquant sur le lien suivant:"
+                "content": "<b>[En zone publique]</b> Vous avez la possibilité de solliciter directement XpFibre pour effectuer les travaux, et demander un devis en cliquant sur le lien suivant:"
             }
             ,
             {
@@ -546,11 +538,11 @@
         "content": [],
         "answers": [
             {
-                "content": "Construction neuve.",
+                "content": "Construction neuve",
                 "nextMessageId": 29
             },
             {
-                "content": "Construction ancienne.",
+                "content": "Construction ancienne",
                 "nextMessageId": 30
             }
         ]
@@ -578,11 +570,11 @@
         "content": [],
         "answers": [
             {
-                "content": "J'ai signé une convention immeuble avec le SMO Essonne numérique.",
+                "content": "J'ai signé une convention immeuble avec le SMO Essonne numérique",
                 "nextMessageId": 31
             },
             {
-                "content": "Je n'ai pas signé une convention immeuble avec le SMO Essonne numérique.",
+                "content": "Je n'ai pas signé une convention immeuble avec le SMO Essonne numérique",
                 "nextMessageId": 32
             }
         ]
