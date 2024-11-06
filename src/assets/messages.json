@@ -215,7 +215,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "Veuillez remplir ce formulaire :"
+                "content": "Veuillez compléter ce formulaire :"
             },
             {
                 "isLink": false, 
@@ -259,7 +259,7 @@
         "content": [
             {
                 "isLink": false,
-                "content": "En zone publique (<b>en dehors du droit du terrain</b>; route et/ou trottoir qui n'est pas dans l'alignement du droit du terrain) c'est le responsable d'infrastructure qui est responsable des opérations."
+                "content": "En zone publique <b>en dehors du droit du terrain</b> (route et/ou trottoir qui n'est pas dans l'alignement du droit du terrain) c'est le responsable d'infrastructure qui est responsable des opérations."
             },
             {
                 "isLink": false,
@@ -277,7 +277,7 @@
             },
             {
                 "isLink": false,
-                "content": ""
+                "content": "<br>"
             },
             {
                 "isLink": false,

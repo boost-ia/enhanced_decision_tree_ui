@@ -16,6 +16,14 @@
     padding: 30px;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+        margin:0;
+        background-color: white;
+    };
 }
 
 #form-container {
@@ -25,10 +33,15 @@
 .btn-primary {
     
     border: none;
+    width: 100%;
 
     &:disabled {
         cursor: not-allowed;
         background-color: gray;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 50%
     }
 }
 

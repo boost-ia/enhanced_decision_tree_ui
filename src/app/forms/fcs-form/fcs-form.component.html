@@ -11,7 +11,7 @@
     <label for="conventionDate">Date du dépôt de la convention signée :</label>
     <input type="date" formControlName="conventionDate" id="conventionDate" name="conventionDate">   
     <label fpr="picture" >Pièce jointe convention signée :</label>
-    <app-image-input #conventionInput [text]="'Image de la convention signée'"></app-image-input>
+    <app-pdf-input #conventionInput ></app-pdf-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
 </form>

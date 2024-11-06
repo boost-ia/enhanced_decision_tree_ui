@@ -2,11 +2,11 @@
   #openChatButton
   id="open-chatbot-button" 
   (click)="openChat()" 
-  *ngIf="!isChatShown && !isMobile" 
+  *ngIf="!isChatShown" 
   style="border: none"
   aria-live="polite"
   aria-label="Ouvrir le tchatbot">
   <img style="width:100%" src="assets/Icon_chatbot_essonne_numerique_copyright_shutterstock.png" >
 </button>
 
-<app-chat #mainChat id="main-chat" [ngStyle]="!isChatShown ? {'display': 'none'} : {}" *ngIf="!isMobile" ></app-chat>
+<app-chat #mainChat id="main-chat" [ngStyle]="!isChatShown ? {'display': 'none'} : {}"></app-chat>

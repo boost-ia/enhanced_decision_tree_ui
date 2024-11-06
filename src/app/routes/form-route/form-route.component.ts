@@ -137,10 +137,16 @@ export class FormRouteComponent {
   }
 
   get isDisabled() {
+    if(this.isSentSuccessfull){
+      return true;
+    }
     if(this.currentFormComponent){
       return this.currentFormComponent.isDisabled;
     }
-    return true;
+    if(!this.currentFormComponent){
+      return true;
+    }
+    return false;
   }
 
 }

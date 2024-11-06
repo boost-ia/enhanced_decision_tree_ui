@@ -3,17 +3,18 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ImageInputComponent } from '../image-input/image-input.component';
 import { FormDisplayService } from '../../services/form-display.service';
 import { form } from '../../models/models';
+import { PdfInputComponent } from '../pdf-input/pdf-input.component';
 
 @Component({
   selector: 'app-fcs-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, ImageInputComponent],
+  imports: [FormsModule, ReactiveFormsModule, PdfInputComponent],
   templateUrl: './fcs-form.component.html',
   styleUrl: './fcs-form.component.scss'
 })
 export class FcsFormComponent {
 
-  @ViewChild('conventionInput') conventionInput: ImageInputComponent | undefined
+  @ViewChild('conventionInput') conventionInput: PdfInputComponent | undefined
 
   fcsForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
@@ -35,11 +36,19 @@ export class FcsFormComponent {
   }
 
   getConvention() {
-    return this.conventionInput?.image;
+    return this.conventionInput?.pdf;
   }
 
   get isDisabled() {
-    return this.fcsForm.invalid || !this.conventionInput?.isImageValid;
+    if(this.fcsForm.invalid) {
+      return true;
+    }
+
+    if(!this.conventionInput?.isThereAPdf) {
+      return true;
+    }
+
+    return false;
   }
 
 }
