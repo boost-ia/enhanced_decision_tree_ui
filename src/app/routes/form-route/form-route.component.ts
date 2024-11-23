@@ -35,6 +35,7 @@ export class FormRouteComponent {
   
   isLoading = false;
   isSentSuccessfull = false;
+  error = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -59,6 +60,10 @@ export class FormRouteComponent {
     switch (this.formDisplay) {
       case 'FBFORM':
         form = this.fbFormComponent.getForm();
+        let attachedPiece = this.fbFormComponent.getAttachedPiece();
+        if (attachedPiece) {
+          finalForm.append('attachedPiece', attachedPiece);
+        }
         break;
       case 'FMNFORM':
         form = this.fmnFormComponent.getForm();
@@ -81,8 +86,12 @@ export class FormRouteComponent {
       case 'FMAFORM':
         form = this.fmaFormComponent.getForm();
         let screenShotFma = this.fmaFormComponent.getScreenShot();
+        let attachedPieceFma = this.fmaFormComponent.getAttachedPiece();
         if (screenShotFma) {
           finalForm.append('screenShot', screenShotFma);
+        }
+        if (attachedPieceFma) {
+          finalForm.append('attachedPiece', attachedPieceFma);
         }
         break;
       case 'FNPFORM':
@@ -109,10 +118,12 @@ export class FormRouteComponent {
       next: (response: any) => {
         this.isSentSuccessfull = true;
         this.isLoading = false;
+        this.error = false;
       },
       error: (err: any) => {
         this.isLoading = false;
         this.isSentSuccessfull = false
+        this.error = true;
       }
     })
   }

@@ -5,17 +5,19 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { CommonModule } from '@angular/common';
 import { FormDisplayService } from '../../services/form-display.service';
 import { form } from '../../models/models';
+import { PdfInputComponent } from '../pdf-input/pdf-input.component';
 
 @Component({
   selector: 'app-fma-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, PdfInputComponent],
   templateUrl: './fma-form.component.html',
   styleUrl: './fma-form.component.scss'
 })
 export class FmaFormComponent {
 
   @ViewChild('picture') pictureInput: ImageInputComponent | undefined
+  @ViewChild('attachedPiece') attachedPieceInput: PdfInputComponent | undefined
 
   fmaForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
@@ -48,6 +50,10 @@ export class FmaFormComponent {
 
   getScreenShot() {
     return this.pictureInput?.image;
+  }
+
+  getAttachedPiece() {
+    return this.attachedPieceInput?.pdf;
   }
 
   get isDisabled() {

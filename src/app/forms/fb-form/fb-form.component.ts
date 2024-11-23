@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { PdfInputComponent } from '../pdf-input/pdf-input.component';
 
 @Component({
   selector: 'app-fb-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, PdfInputComponent],
   templateUrl: './fb-form.component.html',
   styleUrl: './fb-form.component.scss'
 })
 export class FbFormComponent {
+
+  @ViewChild('attachedPiece') attachedPieceInput: PdfInputComponent | undefined
 
   fbForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
@@ -26,8 +29,15 @@ export class FbFormComponent {
     return this.fbForm.value;
   }
 
+  getAttachedPiece() {
+    return this.attachedPieceInput?.pdf;
+  }
+
   get isDisabled() {
-    return this.fbForm.invalid;
+    if(this.fbForm.invalid) {
+      return true;
+    }
+    return false;
   }
 
 }

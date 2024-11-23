@@ -34,6 +34,10 @@
         "content": [
             {
                 "isLink": false,
+                "content": "Sur votre commune, l’Opérateur d’Infrastructure est Essonne numérique, nous allons pouvoir vous accompagner face à votre problématique."
+            },
+            {
+                "isLink": false,
                 "content": "Quel est votre besoin ?"
             }
         ],
@@ -57,7 +61,7 @@
             },
             {
                 "isLink": true,
-                "content": "Cliquez sur ce lien pour trouver votre opérateur d’infrastructure",
+                "content": "Je clique sur le lien pour trouver mon ou mes opérateurs d'infrastructures.",
                 "link": "link"
             }
         ],
@@ -371,11 +375,11 @@
         "content": [],
         "answers": [
             {
-                "content": "Je construis moi-même la maison",
+                "content": "Je construis moi-même la maison, je suis en charge de la viabilisation du terrain",
                 "nextMessageId": 22
             },
             {
-                "content": "Je passe par un promoteur immobilier",
+                "content": "Je passe par un promoteur immobilier, la viabilisation est à sa charge",
                 "nextMessageId": 33
             }
         ]
@@ -570,8 +574,12 @@
         "content": [],
         "answers": [
             {
-                "content": "J'ai signé une convention immeuble avec le SMO Essonne numérique",
+                "content": "J'ai signé une convention immeuble avec le SMO Essonne numérique il y a moins de 6 mois.",
                 "nextMessageId": 31
+            },
+            {
+                "content": "J'ai signé une convention immeuble avec le SMO Essonne numérique il y a plus de 6 mois.",
+                "nextMessageId": 34
             },
             {
                 "content": "Je n'ai pas signé une convention immeuble avec le SMO Essonne numérique",
@@ -630,6 +638,21 @@
             {
                 "isLink": false,
                 "content": "Face à cette problématique, seul votre promoteur peut débloquer la situation."
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "content": [
+            {
+                "isLink": false,
+                "content": "Je complète le formulaire pour vérifier la prise en compte de ma demande."
+            },
+            {
+                "isLink": false,
+                "content": "Ouvrir le formulaire",
+                "isForm": true,
+                "formName": "FCSFORM"
             }
         ]
     }

@@ -14,6 +14,8 @@
     <input type="text" formControlName="cartographyLink" id="cartographyLink" name="cartographyLink">
     <label for="map-picture" >Image de la carte :</label>
     <app-image-input #picture [text]="'Image de la carte'"></app-image-input>
+    <label for="attachedPiece">Certificat de numérotation ou d’adressage délivré par la mairie :</label>
+    <app-pdf-input #attachedPiece></app-pdf-input>
     <label for="comment">Commentaire :</label>
     <textarea formControlName="comment" id="comment" name="comment"></textarea>
 </form>

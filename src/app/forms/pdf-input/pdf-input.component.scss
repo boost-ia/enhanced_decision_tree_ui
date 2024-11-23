@@ -1,8 +1,14 @@
+@import '../../../styles.scss';
 .drop-zone {
-    border: 2px dashed #cccccc;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
+  background-color: darken(white, 10%);
+  border: 2px solid $main-blue;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+      background-color: darken(white, 20%);
+  }
   }
   
   .drop-zone:hover {

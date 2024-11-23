@@ -6,14 +6,13 @@ import { CurrentMessageComponent } from './current-message/current-message.compo
 import { CommonModule } from '@angular/common';
 import { Subject } from 'rxjs';
 import { HistoryMessageComponent } from './history-message/history-message.component';
-import { CitySelectorComponent } from './city-selector/city-selector.component';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { ResizeService } from '../services/resize.service';
 
 @Component({
   selector: 'app-chat',
   standalone: true,
-  imports: [CommonModule, CurrentMessageComponent, HistoryMessageComponent, CitySelectorComponent],
+  imports: [CommonModule, CurrentMessageComponent, HistoryMessageComponent],
   templateUrl: './chat.component.html',
   styleUrl: './chat.component.scss'
 })
@@ -145,7 +144,7 @@ export class ChatComponent {
     if(!this.currentCity?.isInEn) {
       this.addMessageToHistory(this.currentMessage!, 3)
       let message = this.chatMessages[3]
-      message.content[0].content = "Sur votre commune, l'OI ou les OI référents sont : " + this.currentCity?.OIReferent
+      message.content[0].content = "Sur votre commune, l’Opérateur d’Infrastructure n’est pas Essonne numérique, l'OI ou les OI référents sont : " + this.currentCity?.OIReferent
       message.content[1].link =  this.currentCity?.OILink
       this.currentMessage = message;
     }
