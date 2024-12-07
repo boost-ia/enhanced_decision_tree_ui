@@ -31,6 +31,7 @@ export class ChatRouteComponent {
   ngAfterViewInit() {
     if(this.isMobile) {
       this.resizeService.setIconSize();
+      this.resizeService.setMobile();
     } else {
       this.resizeService.startChatObserver(this.mainChat);
     }

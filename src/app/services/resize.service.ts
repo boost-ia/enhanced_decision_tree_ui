@@ -14,6 +14,11 @@ export class ResizeService {
   private chatObserver = new ResizeObserver(entries => {
     for (let entry of entries) {
 
+      if (this.deviceService.isMobile()) {
+        this.resizeSubject.next({ height: 100, heightUnit: '%', width: 100, widthUnit: '%' });
+        return;
+      }
+
       let { height, width } = entry.contentRect;
 
       const lastChild = entry.target.lastChild;
@@ -27,10 +32,6 @@ export class ResizeService {
         height = maxPossibleHeightOfChat;
       }
 
-      if (this.deviceService.isMobile()) {
-        this.resizeSubject.next({ height: 100, heightUnit: '%', width: 100, widthUnit: '%' });
-        return;
-      }
       this.resizeSubject.next({ height, heightUnit: 'px', width, widthUnit: 'px' });
     }
   });
@@ -61,7 +62,11 @@ export class ResizeService {
 
   public setIconSize(): void {
     this.stopChatObserver();
-    this.resizeSubject.next({ height: 90, heightUnit: 'px', width: 90, widthUnit: 'px' });
+    if(this.deviceService.isMobile()) {
+      this.resizeSubject.next({ height: 100, heightUnit: 'px', width: 100, widthUnit: 'px' });
+      return;
+    }
+    this.resizeSubject.next({ height: 110, heightUnit: 'px', width: 110, widthUnit: 'px' });
   }
 
   public startChatObserver(chat: ChatComponent): void {
@@ -74,6 +79,10 @@ export class ResizeService {
     if (this.chat) {
       this.startChatObserver(this.chat);
     }
+  }
+
+  public setMobile() {
+    window.parent.postMessage({ 'action': 'setMobile' }, '*');
   }
 
   public stopChatObserver(): void {
