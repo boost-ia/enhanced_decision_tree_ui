@@ -8,12 +8,19 @@
     <input type="text" formControlName="mail" id="mail" name="mail">
     <label for="address">Adresse de la dégradation  :</label>
     <input type="text" formControlName="address" id="address" name="address">
+    <label for="city">Commune :</label>
+    <ng-select
+        [multiple]="false" 
+        [searchable]="true"
+        formControlName="city">
+        <ng-option *ngFor="let city of cities" [value]="cityLabel(city)">{{cityLabel(city)}}</ng-option>
+    </ng-select>
     <label for="phone">Téléphone :</label>
     <input type="text" formControlName="phone" id="phone" name="phone">
     <label for="risk">Évaluation du risque :</label>
     <ng-select formControlName="risk" id="risk" name="risk" >
-        <ng-option>URGENT</ng-option>
-        <ng-option>NON-URGENT</ng-option>
+        <ng-option [value]="'urgent'">URGENT</ng-option>
+        <ng-option [value]="'non-urgent'">NON-URGENT</ng-option>
     </ng-select>
     <label fpr="picture" >Image de la dégradation :</label>
     <app-image-input #picture [text]="'Image de la dégradation'" ></app-image-input>

@@ -10,7 +10,7 @@
 <div id="answers" class="d-flex flex-wrap justify-content-center" >
     <button 
         *ngFor="let answer of currentMessage.answers" 
-        (click)="updateMessage(answer.nextMessageId)" 
+        (click)="handleAnswerButtonClicked(answer)" 
         class="btn btn-primary m-2"
         aria-live="assertive"
         [attr.aria-label]="answer.content">{{answer.content}}</button>

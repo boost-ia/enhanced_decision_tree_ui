@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { city, form, message, messageContentElement } from '../../models/models';
+import { answer, city, form, message, messageContentElement } from '../../models/models';
 import { CommonModule } from '@angular/common';
 import { CitySelectorComponent } from '../city-selector/city-selector.component';
 import { FormDisplayService } from '../../services/form-display.service';
+import { ChatCallbacksService } from '../../services/chat-callbacks.service';
 
 @Component({
   selector: 'app-current-message',
@@ -19,9 +20,19 @@ export class CurrentMessageComponent {
   @Input() currentCity?: city;
 
   constructor(
-    private formDisplayService: FormDisplayService
+    private formDisplayService: FormDisplayService,
+    private callbacksService: ChatCallbacksService
   ) {
 
+  }
+
+  handleAnswerButtonClicked(answer: answer) {
+    if(answer.callbacks) {
+      for (let callback of answer.callbacks) {
+        this.callbacksService.executeCallback(callback);
+      }
+    }
+    this.updateMessage(answer.nextMessageId);
   }
 
   updateMessage(id: number) {

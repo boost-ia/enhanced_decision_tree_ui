@@ -14,7 +14,10 @@
             },
             {
                 "content": "Non",
-                "nextMessageId": null
+                "nextMessageId": null,
+                "callbacks": [
+                    "closeChat"
+                ]
             }
             
         ]

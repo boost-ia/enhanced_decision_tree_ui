@@ -3,17 +3,19 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ImageInputComponent } from '../image-input/image-input.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
-import { form } from '../../models/models';
+import city_label, { cities } from '../../utils/city';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-fd-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, CommonModule],
   templateUrl: './fd-form.component.html',
   styleUrl: './fd-form.component.scss'
 })
 export class FdFormComponent {
 
+  cities = cities
   @ViewChild('picture') pictureInput: ImageInputComponent | undefined
 
   fdForm = new FormGroup({
@@ -22,6 +24,7 @@ export class FdFormComponent {
     mail: new FormControl('', [Validators.required]),
     phone: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required]),
+    city: new FormControl(null, [Validators.required]),
     risk: new FormControl('', Validators.required),
     comment: new FormControl('', [Validators.required])
   })
@@ -38,6 +41,10 @@ export class FdFormComponent {
 
   getScreenShot() {
     return this.pictureInput?.image;
+  }
+
+  cityLabel(city: any) {
+    return `${city.name} (${city.postalCode})`;
   }
 
   get isDisabled() {

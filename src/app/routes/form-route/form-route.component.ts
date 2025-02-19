@@ -29,7 +29,8 @@ export class FormRouteComponent {
 
   formDisplay: form = form.FBFORM;
   formNames = form;
-  endpoint = 'https://chatbot.essonnenumerique.com:8080/form-endpoint';
+  //endpoint = 'https://chatbot.essonnenumerique.com:8080/form-endpoint';
+  endpoint = 'http://localhost:8080/form-endpoint';
   
   isMobile = this.deviceService.isMobile();
   

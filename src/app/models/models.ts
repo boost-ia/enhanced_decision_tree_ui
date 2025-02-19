@@ -1,6 +1,7 @@
 export type answer = {
     content: string;
     nextMessageId: number;
+    callbacks?: string[];
 }
 
 export type messageContentElement = {

@@ -17,7 +17,7 @@ import { ResizeService } from './services/resize.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ChatComponent, FbFormComponent, FmnFormComponent, FdFormComponent, FmaFormComponent, FnpFormComponent, FcsFormComponent],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
