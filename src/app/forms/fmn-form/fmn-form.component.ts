@@ -5,11 +5,12 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
 import { ImageInputComponent } from '../image-input/image-input.component';
 import { cities } from '../../utils/city';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-fmn-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, ImageInputComponent, CommonModule],
   templateUrl: './fmn-form.component.html',
   styleUrl: './fmn-form.component.scss'
 })

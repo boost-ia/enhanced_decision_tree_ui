@@ -3,11 +3,12 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { PdfInputComponent } from '../pdf-input/pdf-input.component';
 import { cities } from '../../utils/city';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-fb-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, PdfInputComponent],
+  imports: [FormsModule, ReactiveFormsModule, NgSelectModule, PdfInputComponent, CommonModule],
   templateUrl: './fb-form.component.html',
   styleUrl: './fb-form.component.scss'
 })
