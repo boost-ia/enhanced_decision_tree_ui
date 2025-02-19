@@ -3,7 +3,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ImageInputComponent } from '../image-input/image-input.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
-import city_label, { cities } from '../../utils/city';
+import { cities } from '../../utils/city';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -4,6 +4,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormDisplayService } from '../../services/form-display.service';
 import { ImageInputComponent } from '../image-input/image-input.component';
+import { cities } from '../../utils/city';
 
 @Component({
   selector: 'app-fmn-form',
@@ -14,6 +15,7 @@ import { ImageInputComponent } from '../image-input/image-input.component';
 })
 export class FmnFormComponent {
 
+  cities = cities
   @ViewChild('screenShot') screenShotInput: ImageInputComponent | undefined
   @ViewChild('certificate') screenShotCertificateInput: ImageInputComponent | undefined
 
@@ -23,6 +25,7 @@ export class FmnFormComponent {
     mail: new FormControl('', [Validators.required]),
     firstDemandDate: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required]),
+    city: new FormControl(null, [Validators.required]),
     dossierNumber: new FormControl('', [Validators.required]),
     comment: new FormControl('', [Validators.required])
   })
@@ -37,6 +40,10 @@ export class FmnFormComponent {
 
   getCertificate() {
     return this.screenShotCertificateInput?.image;
+  }
+
+  cityLabel(city: any) {
+    return `${city.name} (${city.postalCode})`;
   }
 
   get isDisabled() {

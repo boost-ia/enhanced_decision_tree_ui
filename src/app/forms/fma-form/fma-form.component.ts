@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormDisplayService } from '../../services/form-display.service';
 import { form } from '../../models/models';
 import { PdfInputComponent } from '../pdf-input/pdf-input.component';
+import { cities } from '../../utils/city';
 
 @Component({
   selector: 'app-fma-form',
@@ -16,6 +17,7 @@ import { PdfInputComponent } from '../pdf-input/pdf-input.component';
 })
 export class FmaFormComponent {
 
+  cities = cities
   @ViewChild('picture') pictureInput: ImageInputComponent | undefined
   @ViewChild('attachedPiece') attachedPieceInput: PdfInputComponent | undefined
 
@@ -25,6 +27,7 @@ export class FmaFormComponent {
     mail: new FormControl('', [Validators.required]),
     incorrectAddress: new FormControl('', [Validators.required]),
     correctAddress: new FormControl('', Validators.required),
+    city: new FormControl(null, [Validators.required]),
     cartographyLink: new FormControl(''),
     comment: new FormControl('', [Validators.required])
   })
@@ -54,6 +57,10 @@ export class FmaFormComponent {
 
   getAttachedPiece() {
     return this.attachedPieceInput?.pdf;
+  }
+
+  cityLabel(city: any) {
+    return `${city.name} (${city.postalCode})`;
   }
 
   get isDisabled() {

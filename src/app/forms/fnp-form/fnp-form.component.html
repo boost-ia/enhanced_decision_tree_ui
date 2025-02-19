@@ -6,6 +6,13 @@
     <input type="text" formControlName="firstname" id="firstname" name="firstname">
     <label for="mail">Mail :</label>
     <input type="text" formControlName="mail" id="mail" name="mail">
+    <label for="city">Commune :</label>
+    <ng-select
+        [multiple]="false" 
+        [searchable]="true"
+        formControlName="city">
+        <ng-option *ngFor="let city of cities" [value]="cityLabel(city)">{{cityLabel(city)}}</ng-option>
+    </ng-select>
     <label for="actualOutletNumber">Nombre de prises actuelles actives :</label>
     <input type="number" formControlName="actualOutletNumber" id="actualOutletNumber" name="actualOutletNumber">
     <label for="totalOutletNumber">Nombre de prises total :</label>

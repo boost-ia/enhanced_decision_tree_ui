@@ -8,6 +8,13 @@
     <input type="text" formControlName="mail" id="mail" name="mail">
     <label for="address">Adresse des logements concernés :</label>
     <input type="text" formControlName="address" id="address" name="address">
+    <label for="city">Commune :</label>
+    <ng-select
+        [multiple]="false" 
+        [searchable]="true"
+        formControlName="city">
+        <ng-option *ngFor="let city of cities" [value]="cityLabel(city)">{{cityLabel(city)}}</ng-option>
+    </ng-select>
     <label for="conventionDate">Date du dépôt de la convention signée :</label>
     <input type="date" formControlName="conventionDate" id="conventionDate" name="conventionDate">   
     <label fpr="picture" >Pièce jointe convention signée :</label>

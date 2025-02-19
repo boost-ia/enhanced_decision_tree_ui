@@ -8,6 +8,13 @@
     <input type="text" formControlName="mail" id="mail" name="mail">
     <label for="address">Adresse :</label>
     <input type="text" formControlName="address" id="address" name="address">
+    <label for="city">Commune :</label>
+    <ng-select
+        [multiple]="false" 
+        [searchable]="true"
+        formControlName="city">
+        <ng-option *ngFor="let city of cities" [value]="cityLabel(city)">{{cityLabel(city)}}</ng-option>
+    </ng-select>
     <label for="operator">Opérateur :</label>
     <input type="text" formControlName="operator" id="operator" name="operator">
     <label for="incidentDate">Date de l'incident :</label>

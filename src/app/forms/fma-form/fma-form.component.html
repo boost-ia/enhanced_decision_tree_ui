@@ -10,6 +10,13 @@
     <input type="text" formControlName="incorrectAddress" id="incorrectAddress" name="incorrectAddress">
     <label for="correctAddress">Adresse correcte :</label>
     <input type="text" formControlName="correctAddress" id="correctAddress" name="correctAddress">
+    <label for="city">Commune :</label>
+    <ng-select
+        [multiple]="false" 
+        [searchable]="true"
+        formControlName="city">
+        <ng-option *ngFor="let city of cities" [value]="cityLabel(city)">{{cityLabel(city)}}</ng-option>
+    </ng-select>
     <label for="cartographyLink">Lien cartographique :</label>
     <input type="text" formControlName="cartographyLink" id="cartographyLink" name="cartographyLink">
     <label for="map-picture" >Image de la carte :</label>

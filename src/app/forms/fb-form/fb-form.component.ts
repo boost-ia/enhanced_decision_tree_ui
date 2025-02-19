@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { PdfInputComponent } from '../pdf-input/pdf-input.component';
+import { cities } from '../../utils/city';
 
 @Component({
   selector: 'app-fb-form',
@@ -12,6 +13,7 @@ import { PdfInputComponent } from '../pdf-input/pdf-input.component';
 })
 export class FbFormComponent {
 
+  cities = cities
   @ViewChild('attachedPiece') attachedPieceInput: PdfInputComponent | undefined
 
   fbForm = new FormGroup({
@@ -19,6 +21,7 @@ export class FbFormComponent {
     firstname: new FormControl('', [Validators.required]),
     mail: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required]),
+    city: new FormControl(null, [Validators.required]),
     operator: new FormControl('', [Validators.required]),
     incidentDate: new FormControl('', [Validators.required]),
     incidentNumber: new FormControl('', [Validators.required]),
@@ -31,6 +34,10 @@ export class FbFormComponent {
 
   getAttachedPiece() {
     return this.attachedPieceInput?.pdf;
+  }
+
+  cityLabel(city: any) {
+    return `${city.name} (${city.postalCode})`;
   }
 
   get isDisabled() {

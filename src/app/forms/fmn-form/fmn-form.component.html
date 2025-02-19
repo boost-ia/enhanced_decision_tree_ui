@@ -10,6 +10,13 @@
     <input type="date" formControlName="firstDemandDate" id="firstDemandDate" name="firstDemandDate">
     <label for="address">Adresse du logement:</label>
     <input type="text" formControlName="address" id="address" name="address">
+    <label for="city">Commune :</label>
+    <ng-select
+        [multiple]="false" 
+        [searchable]="true"
+        formControlName="city">
+        <ng-option *ngFor="let city of cities" [value]="cityLabel(city)">{{cityLabel(city)}}</ng-option>
+    </ng-select>
     <label>Pièce-jointe capture d'écran :</label>
     <app-image-input #screenShot [text]="'Encart capture d\'écran'" ></app-image-input>
     <label for="dossierNumber">Numéro de dossier XpFibre communiqué via leur plateforme :</label>
