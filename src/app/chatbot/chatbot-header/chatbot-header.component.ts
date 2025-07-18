@@ -3,8 +3,6 @@ import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-chatbot-header',
-  standalone: true,
-  imports: [],
   templateUrl: './chatbot-header.component.html',
   styleUrl: './chatbot-header.component.scss',
 })

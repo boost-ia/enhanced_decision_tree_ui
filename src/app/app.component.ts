@@ -5,11 +5,10 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, ChatbotComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [CommonModule, ChatbotComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'chatbot_essonne_numerique';
