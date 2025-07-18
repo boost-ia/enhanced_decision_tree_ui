@@ -18,7 +18,6 @@
     "@angular/platform-browser": "^18.0.4",
     "@angular/platform-browser-dynamic": "^18.0.4",
     "@angular/router": "^18.0.4",
-    "@ng-select/ng-select": "^12.0.7",
     "bootstrap": "^5.3.3",
     "ngx-device-detector": "^8.0.0",
     "rxjs": "~7.8.0",

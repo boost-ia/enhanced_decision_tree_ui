@@ -1,40 +1,26 @@
-export type answer = {
-    content: string;
-    nextMessageId: number;
-    callbacks?: string[];
-}
+export type ChatResponse = {
+  text: string;
+  nodeId: string;
+};
 
-export type messageContentElement = {
-    isLink: boolean;
-    content: string;
-    link?: string;
-    isForm?: boolean;
-    formName?: form;
-}
+export type LinkContentBlock = {
+  url: string;
+  content: string;
+};
 
-export type message = {
-    id: number;
-    content: messageContentElement[];
-    answers: answer[];
-}
+export type MarkdownContentBlock = {
+  content: string;
+};
 
-export type historyMessage = {
-    message: message;
-    chosenAnswerContent: string;
-}
+export type ChatContentBlock = {
+  type: 'link' | 'markdown' | 'chat';
+  data: LinkContentBlock | MarkdownContentBlock;
+};
 
-export type city = {
-    name: string;
-    isInEn: boolean;
-    OIReferent?: string;
-    OILink?: string;
-}
-
-export enum form {
-    FBFORM = 'FBFORM',
-    FMNFORM = 'FMNFORM',
-    FDFORM = 'FDFORM',
-    FMAFORM = 'FMAFORM',
-    FNPFORM = 'FNPFORM',
-    FCSFORM = 'FCSFORM'
-}
+export type ChatNode = {
+  id: number;
+  content: ChatContentBlock[];
+  parentId?: string;
+  responses: ChatResponse[];
+  keywords?: string[];
+};
