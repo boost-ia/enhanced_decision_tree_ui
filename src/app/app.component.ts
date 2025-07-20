@@ -1,15 +1,19 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { DeviceDetectorService } from 'ngx-device-detector';
+import { Component } from '@angular/core';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+import { environment } from 'src/environments/environment';
 
 @Component({
-    selector: 'app-root',
-    imports: [CommonModule, ChatbotComponent],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: true,
+  styleUrl: './app.component.scss',
+  imports: [ChatbotComponent],
 })
 export class AppComponent {
   title = 'chatbot_essonne_numerique';
+
+  ngOnInit(): void {
+    const primary = environment.primaryColor;
+    document.documentElement.style.setProperty('--primary-color', primary);
+  }
 }

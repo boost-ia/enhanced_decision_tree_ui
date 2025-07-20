@@ -1,0 +1,87 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+#main-step-content {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  margin: 5px 10px;
+}
+
+#agent-message {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px;
+
+  .robot-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    i {
+      color: white;
+    }
+  }
+
+  .agent-text {
+    flex: 1;
+  }
+}
+
+#discussion-step-content {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0
+}
+
+#discussion-step-responses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+#discussion-step-responses button {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#discussion-step-responses button:hover {
+  background-color: var(--primary-color-hover);
+  color: var(--primary-color);
+}
+
+#discussion-step-responses button.selected {
+  background-color: var(--primary-color-hover);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+#separation-line {
+  margin: 15px auto;
+  width: 50%;
+  height: 2px;
+  background-color: gray;
+}

@@ -1,0 +1,2 @@
+<p *ngIf="isMarkdown" > {{ block.data.content }} </p>
+<p *ngIf="isLink" > <a [href]="block.data.content" target="_blank">{{ block.data.content }}</a> </p>

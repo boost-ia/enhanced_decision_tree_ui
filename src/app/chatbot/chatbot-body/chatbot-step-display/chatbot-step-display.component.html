@@ -1,0 +1,20 @@
+<div *ngIf="step.node.agentMessage" id="agent-message" class="agent-message">
+    <span class="robot-icon">
+        <i class="fa-solid fa-robot"></i>
+    </span>
+    <span class="agent-text">{{ step.node.agentMessage }}</span>
+</div>
+<div id="main-step-content">
+    <div id="discussion-step-content">
+        <app-block-display *ngFor="let block of step.node.content" [block]="block"></app-block-display>
+    </div>
+    <div id="discussion-step-responses">
+        <button 
+            *ngFor="let response of step.node.responses"
+            (click)="onResponseClick(step.node.id, response.nodeId)"
+            [class.selected]="step.nextNodeId === response.nodeId">
+            {{response.text}}
+        </button>
+    </div>
+</div>
+<div id="separation-line" *ngIf="step.nextNodeId || step.textualResponse"></div>

@@ -1,1 +1,2 @@
-<p>chatbot-body works!</p>
+<app-chatbot-step-display *ngFor="let step of discussion" [step]="step"></app-chatbot-step-display>
+<div class="loader" *ngIf="isLoading"></div>

@@ -14,7 +14,7 @@
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
@@ -25,8 +25,9 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "@env/*": ["src/environments/*"],
-      "@app/*": ["src/app/*"]
+      "@env/*": [
+        "environments/*"
+      ]
     }
   },
   "angularCompilerOptions": {

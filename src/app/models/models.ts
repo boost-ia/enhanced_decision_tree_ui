@@ -1,6 +1,6 @@
 export type ChatResponse = {
   text: string;
-  nodeId: string;
+  nodeId: number;
 };
 
 export type LinkContentBlock = {
@@ -20,7 +20,16 @@ export type ChatContentBlock = {
 export type ChatNode = {
   id: number;
   content: ChatContentBlock[];
-  parentId?: string;
+  parentId?: number;
   responses: ChatResponse[];
   keywords?: string[];
+  agentMessage?: string;
 };
+
+export type DiscussionStep = {
+  node: ChatNode;
+  nextNodeId?: number;
+  textualResponse?: string;
+};
+
+export type Discussion = DiscussionStep[];

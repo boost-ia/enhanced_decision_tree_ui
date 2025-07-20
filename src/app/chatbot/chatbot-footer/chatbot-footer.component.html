@@ -1,1 +1,10 @@
-<p>chatbot-footer works!</p>
+<textarea [(ngModel)]="message"
+          id="message-input"
+          placeholder="Type your message..."
+          (input)="autoResize($event)"
+          (keydown)="handleKeyDown($event)"
+          rows="1"
+          placeholder="Quelle est votre requête ?"></textarea>
+<button id="send-button" (click)="sendMessage()">
+    <i class="fa-solid fa-paper-plane"></i>
+</button>
